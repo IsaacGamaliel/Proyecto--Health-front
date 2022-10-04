@@ -1,0 +1,15 @@
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ProyectoAndroid.deps.json
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ProyectoAndroid.dll
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ref\ProyectoAndroid.dll
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ProyectoAndroid.pdb
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.csproj.AssemblyReference.cache
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.AssemblyInfoInputs.cache
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.AssemblyInfo.cs
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.csproj.CoreCompileInputs.cache
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.dll
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ref\ProyectoAndroid.dll
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.pdb
+C:\Users\52428\source\repos\ProyectoAndroid\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\PaginaLogin.xaml.g.cs
