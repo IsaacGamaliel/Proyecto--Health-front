@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {}
+    "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {
+    "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+        "projectUniqueName": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
         "projectName": "ProyectoAndroid.iOS",
-        "projectPath": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
-        "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
+        "projectPath": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+        "packagesPath": "C:\\Users\\Miguel Arturo Rojas\\.nuget\\packages\\",
+        "outputPath": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\52428\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Arturo Rojas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
-                "projectPath": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
+              "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+                "projectPath": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+    "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
+        "projectUniqueName": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
         "projectName": "ProyectoAndroid",
-        "projectPath": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
-        "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\52428\\source\\repos\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid\\obj\\",
+        "projectPath": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
+        "packagesPath": "C:\\Users\\Miguel Arturo Rojas\\.nuget\\packages\\",
+        "outputPath": "C:\\Prue\\Proyecto-Android-front\\ProyectoAndroid\\ProyectoAndroid\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\52428\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Miguel Arturo Rojas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

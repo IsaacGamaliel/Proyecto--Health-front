@@ -4,7 +4,7 @@
              x:Class="ProyectoAndroid.Views.PaginaLogin">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Proyecto base"
+            <Label Text="Proyecto2"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
