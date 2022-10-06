@@ -17,8 +17,24 @@ namespace ProyectoAndroid.Views {
     public partial class PaginaLogin : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Image Logo;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XamUIDemo.Renderers.PancakeView EmailPancake;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XamUIDemo.Renderers.PancakeView PassPancake;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button LoginButton;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PaginaLogin));
+            Logo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "Logo");
+            EmailPancake = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XamUIDemo.Renderers.PancakeView>(this, "EmailPancake");
+            PassPancake = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XamUIDemo.Renderers.PancakeView>(this, "PassPancake");
+            LoginButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "LoginButton");
         }
     }
 }
