@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAndroid.Views.Menu.MenuShell"
+          xmlns:templates="clr-namespace:ProyectoAndroid.Templates"
+        xmlns:Page1="clr-namespace:ProyectoAndroid.Views.SubMenu" 
+        >
+    <Shell.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="GrayColor">#F4F4F4</Color>
+            <Color x:Key="BgColor">Green</Color>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource BgColor}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource GrayColor}"/>
+                <Setter Property="Shell.ForegroundColor" Value="#F4F4F4" />
+            </Style>
+
+            <Style x:Key="MonkeysShell" TargetType="Element" BasedOn="{StaticResource BaseStyle}">
+                <Setter Property="Shell.BackgroundColor" Value="Green" />
+                <Setter Property="Shell.TitleColor" Value="#F4F4F4" />
+            </Style>
+
+            <Style x:Key="FloutItemStyle" TargetType="Grid">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal" />
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource BgColor}"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <Style x:Key="StyleTab" TargetType="Element" BasedOn="{StaticResource MonkeysShell}">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="Green" />
+                <Setter Property="Shell.TabBarTitleColor" Value="#F4F4F4" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="##F4F4F4" />
+            </Style>
+
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}"/>
+            <DataTemplate x:Key="MenuTemplate">
+                <Grid Style="{StaticResource FloutItemStyle}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.8*" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout HeightRequest="60">
+                        <Image Source="{Binding Icon}" Margin="5" VerticalOptions="CenterAndExpand" HeightRequest="30" />
+                    </StackLayout>
+                    <Label Grid.Column="1" Text="{Binding Title}" FontSize="Small" VerticalTextAlignment="Center" TextColor="Black" />
+
+                </Grid>
+            </DataTemplate>
+            <DataTemplate x:Key="FlyoutHeaderTemplate">
+                <templates:HeaderPage>
+
+                </templates:HeaderPage>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <Shell.FlyoutHeader >
+
+        <Frame BackgroundColor="Green"
+                          CornerRadius="55"
+                          >
+            <StackLayout Padding="0,0,0,0">
+
+
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Padding="1">
+                    <Image 
+                    VerticalOptions="Center"
+                    Source="LogoNombre.png"
+                    WidthRequest="250"
+                    HeightRequest="200">
+                    </Image>
+
+                    <Label Text="" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" HorizontalOptions="End"/>
+
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Shell.FlyoutHeader>
+
+
+    <FlyoutItem Title="Dietas" Icon="Misviajes" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Page1:Page1}"/>
+        </Tab>
+    </FlyoutItem>
+
+    
+</Shell>

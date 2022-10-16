@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+            xmlns:ffTransformation="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+            x:Class="ProyectoAndroid.Templates.HeaderPage">
+    <ContentPage.Content>
+        <AbsoluteLayout Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="200" BackgroundColor="#321256">
+            <!--<Image x:Name="imgHeader" Source="header.png" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"></Image>-->
+            <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Transparent">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Orientation="Vertical">
+                    <!--<custom:CircleImage x:Name="imgPerfil" Margin="5" Source="ic_perfil.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill" VerticalOptions="Start" HorizontalOptions="Start" />-->
+                    <ff:CachedImage x:Name="ImgPerfil" Source = "default_1" LoadingPlaceholder = "cargando.png" WidthRequest = "100" HeightRequest = "100" CacheDuration = "30" RetryCount = "5" RetryDelay = "450" DownsampleToViewSize = "true" Aspect="AspectFill" VerticalOptions="Start" HorizontalOptions="Start" Margin="5">
+                        <ff:CachedImage.Transformations>
+                           
+                        </ff:CachedImage.Transformations>
+                    </ff:CachedImage>
+                    <Label x:Name="lblNombre" Text="" TextColor="White" FontSize="Medium" Margin="10, 5, 5, 5"></Label>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoAndroid.Views.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,13 +31,13 @@ namespace ProyectoAndroid.Views
 
             });
         }
-        protected void Back(object s, EventArgs e)
+        
+
+        private void Registro(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
-        }
-        protected void Login(object s, EventArgs e)
-        {
-            Navigation.PopToRootAsync();
+            Application.Current.MainPage = new PaginaRegistro();
+            
+            
         }
     }
 }

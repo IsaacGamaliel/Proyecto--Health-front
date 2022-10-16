@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:renderers="clr-namespace:XamUIDemo.Renderers"
+             xmlns:renderers="clr-namespace:XamUIDemo.Renderers" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
              x:Class="ProyectoAndroid.Views.PaginaLogin"
              BackgroundColor="#F4F4F4"
              NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <ViewModels:UsuarioViewModel></ViewModels:UsuarioViewModel>
+    </ContentPage.BindingContext>
+    
     <ScrollView>
         <AbsoluteLayout>
             <Image
@@ -38,7 +44,8 @@
                     FontSize="18"
                     Placeholder="Correo"
                     PlaceholderColor="Black"
-                    TextColor="Black" />
+                    TextColor="Black"
+                        Text="{}"/>
                 </renderers:PancakeView>
                 <renderers:PancakeView
                     x:Name="PassPancake"
@@ -55,7 +62,8 @@
                     IsPassword="True"
                     Placeholder="Contraseña"
                     PlaceholderColor="Black"
-                    TextColor="Black" />
+                    TextColor="Black" 
+                        Text="{}"/>
                 </renderers:PancakeView>
                 <StackLayout Orientation="Horizontal">
                     <Label
@@ -66,7 +74,7 @@
                         HorizontalOptions="StartAndExpand"
                         VerticalOptions="CenterAndExpand" >
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Back" ></TapGestureRecognizer>
+                            <TapGestureRecognizer Tapped="Registro" ></TapGestureRecognizer>
                         </Label.GestureRecognizers>
                     </Label>
                     <Button
@@ -79,14 +87,14 @@
                     AbsoluteLayout.LayoutBounds="1,1,1,.2"
                     AbsoluteLayout.LayoutFlags="All"
                     BackgroundColor="Green"
-                    Clicked="Login"
                     CornerRadius="0"
                     FontAttributes="Bold"
                     FontSize="18"
-                    Text="Login"
+                    Text="Iniciar sesion"
                     TextColor="White"
                     HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand" />
+                    VerticalOptions="FillAndExpand"
+                      Command="{Binding LoginCommand}"  />
                 </StackLayout>
                 <Label
                     Margin="20"
@@ -97,7 +105,7 @@
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="EndAndExpand">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="Back" ></TapGestureRecognizer>
+                        <TapGestureRecognizer ></TapGestureRecognizer>
                     </Label.GestureRecognizers>
                     <Label.FormattedText>
                         <FormattedString>
@@ -110,8 +118,13 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
+                
             </StackLayout>
         </AbsoluteLayout>
+
+        
+           
+        
     </ScrollView>
     
 </ContentPage>

@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "qg6ijb0clJTNIv5N/B3NKMhBnPXdbekLF45tjHT2zvdFVVAD6yNXPFYD9jBOQcg8kl0UI74HWVS05+sfXAirWA==",
+  "dgSpecHash": "MGdGVWvxUKtxBOiXAQEseffi/6kZoilKsslT2mlGhWzyDxPUldVk9eNLw+gXvdWdLWoVWXjh2UbgFmULyYmr9A==",
   "success": true,
   "projectFilePath": "C:\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\52428\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\plugin.toast\\2.1.2\\plugin.toast.2.1.2.nupkg.sha512",
     "C:\\Users\\52428\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\xamarin.ffimageloading\\2.4.8.956\\xamarin.ffimageloading.2.4.8.956.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.5.922\\xamarin.ffimageloading.forms.2.4.5.922.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\xamarin.ffimageloading.transformations\\2.4.8.956\\xamarin.ffimageloading.transformations.2.4.8.956.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
