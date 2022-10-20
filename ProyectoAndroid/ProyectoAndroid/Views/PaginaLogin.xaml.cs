@@ -1,4 +1,5 @@
-﻿using ProyectoAndroid.Views.Menu;
+﻿using Plugin.Toast;
+using ProyectoAndroid.Views.Menu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,24 @@ namespace ProyectoAndroid.Views
         {
             Application.Current.MainPage = new PaginaRegistro();
             
+            
+        }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(correo.Text))
+            {
+                await DisplayAlert("Advertencia", "El campo del correo es obligatorio", "Ok");
+                return;
+            }
+            
+            if(string.IsNullOrWhiteSpace(contraseña.Text))
+            {
+                await DisplayAlert("Advertencia", "El campo del contraseña es obligatorio", "Ok");
+                return;
+            }
+
+           
             
         }
     }

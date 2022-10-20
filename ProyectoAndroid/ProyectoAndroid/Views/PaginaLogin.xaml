@@ -45,7 +45,8 @@
                     Placeholder="Correo"
                     PlaceholderColor="Black"
                     TextColor="Black"
-                        Text="{}"/>
+                        x:Name="correo"
+                        Text="{Binding email}"/>
                 </renderers:PancakeView>
                 <renderers:PancakeView
                     x:Name="PassPancake"
@@ -63,7 +64,8 @@
                     Placeholder="Contraseña"
                     PlaceholderColor="Black"
                     TextColor="Black" 
-                        Text="{}"/>
+                        x:Name="contraseña"
+                        Text="{Binding password}"/>
                 </renderers:PancakeView>
                 <StackLayout Orientation="Horizontal">
                     <Label
@@ -94,7 +96,8 @@
                     TextColor="White"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
-                      Command="{Binding LoginCommand}"  />
+                      Command="{Binding LoginCommand}" 
+                        Clicked="LoginButton_Clicked"/>
                 </StackLayout>
                 <Label
                     Margin="20"

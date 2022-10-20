@@ -10,7 +10,7 @@ namespace ProyectoAndroid.Services
     public class ApiRest
     {
         //Url donde se consume la api creada
-        private string URL = "http://192.168.1.66:4000/";
+        private string URL = "http://192.168.67.91:4000/";
 
         public async Task<string> CreateUsuario(string nombre, string apellido, string nickName, string email, string fechaNacimiento, string genero,  string password)
         {
@@ -41,7 +41,7 @@ namespace ProyectoAndroid.Services
 
                 //Envio de datos a apirest para poder ser insertados en la base de datos
                 var response = new HttpResponseMessage();
-                response = await client.PostAsync(string.Concat(URL, "Login"), from);
+                response = await client.PostAsync(string.Concat(URL, "Login/Register"), from);
                 resultado = await response.Content.ReadAsStringAsync();
 
             }
@@ -54,8 +54,31 @@ namespace ProyectoAndroid.Services
             return resultado;
         }
 
+        public async Task<string> Login(string email, string password)
+        {
+            string resultado = "";
+            MultipartFormDataContent from = new MultipartFormDataContent();
+            var contenido = new StringContent(email);
+            from.Add(contenido, "email");
+            contenido = new StringContent(password);
+            from.Add(contenido, "password");
+            HttpClient client = new HttpClient();
+            try
+            {
+                var response = new HttpResponseMessage();
+                response = await client.PostAsync(string.Concat(URL, "Login"), from);
+                resultado = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                resultado = "";
+                Debug.WriteLine(ex.Message);
+            }
+            return resultado;
+        }
 
-        
+
+
 
     }
 }

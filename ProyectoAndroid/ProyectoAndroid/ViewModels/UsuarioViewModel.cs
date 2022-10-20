@@ -6,7 +6,6 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Plugin.Toast;
 using ProyectoAndroid.Views;
-
 using ProyectoAndroid.Models;
 using Newtonsoft.Json;
 using ProyectoAndroid.Views.Menu;
@@ -17,7 +16,7 @@ namespace ProyectoAndroid.ViewModels
     {
         ApiRest apiRest = new ApiRest();
 
-        public string idcliente { get; set; }
+        public string _id{ get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string nickName { get; set; }
@@ -37,12 +36,15 @@ namespace ProyectoAndroid.ViewModels
                     try
                     {
                             var response = await apiRest.CreateUsuario(nombre, apellido, nickName, email, fechaNacimiento, genero, password);
-                            if (response == "")
+                            if (response == null)
                             {
-                                CrossToastPopUp.Current.ShowToastError("Algo salio Mal vuelva a intentarlo");
+                                CrossToastPopUp.Current.ShowToastError("Algunos Campos estan vacios revisa tus datos");
                             }
-                            else
+                            else if(response == "{\"message\":\"This email already exist!\"}")
                             {
+                                CrossToastPopUp.Current.ShowToastError("El correo ya esta registrado");
+                            }
+                            else{
                                 Application.Current.MainPage = new PaginaLogin();
                                 CrossToastPopUp.Current.ShowToastSuccess("Registrado");
                             }
@@ -67,29 +69,32 @@ namespace ProyectoAndroid.ViewModels
                     
                     try
                     {
+                        var response = await apiRest.Login(email, password);
+                        
+                        if (response == "{\"message\":\"Password does not exist\"}" )
+                        {
+                            CrossToastPopUp.Current.ShowToastError("Contraseña incorrecta");
+                        }
+                        else if(response == "{\"message\":\"Email does not exist\"}")
+                        {
+                            CrossToastPopUp.Current.ShowToastError("Email no existe");
+                        }
+                        else
+                        {
+                            
+                             Usuario usuario = JsonConvert.DeserializeObject<Usuario>(response);
+                             
+                             Application.Current.Properties["jsonUsuario"] = JsonConvert.SerializeObject(usuario);
+                             await Application.Current.SavePropertiesAsync();
+                             
+                             Application.Current.MainPage = new MenuShell();
+                             CrossToastPopUp.Current.ShowToastSuccess("Inicio exitoso");
+                        }
 
-                        //var response = await apiRest.Login(email, password);
-                        //if (response == "{\"message\":\"Todos los campos son requeridos\"}" )
-                        //{
-                        //    CrossToastPopUp.Current.ShowToastSuccess("Correo o contraseña incorrecta");
-
-                        //}
-                        //else
-                        //{
-                        //    //Usuario usuario = JsonConvert.DeserializeObject<Usuario>(response);
-                        //    //UsuarioViewModel usuario = JsonConvert.DeserializeObject<UsuarioViewModel>(response);
-                        //    //Application.Current.Properties["jsonUsuario"] = JsonConvert.SerializeObject(usuario);
-                        //    //await Application.Current.SavePropertiesAsync();
-                        //    //await Application.Current.MainPage.Navigation.PushModalAsync(new Principal());
-                        Application.Current.MainPage = new MenuShell();
-                        //CrossToastPopUp.Current.ShowToastSuccess("Inicio exitoso");
-
-                        //}
-
-                    }
-                    catch (Exception ex)
-                    {
+                    }catch (Exception ex){
+                       
                         Console.WriteLine(ex);
+                       
                     }
 
                 });
