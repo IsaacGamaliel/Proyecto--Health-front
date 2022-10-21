@@ -23,23 +23,23 @@
             <!-- Basic information-->
             <!-- First name-->
             <Label Grid.Row="2" Grid.Column="0" Text="Nombre" TextColor="Green" FontSize="15"/>
-            <Entry Grid.Row="3" Grid.Column="0" HeightRequest="40" Text="{Binding nombre}" TextColor="Black" BackgroundColor="Red"  />
+            <Entry x:Name="Nombre" Grid.Row="3" Grid.Column="0" HeightRequest="40" Text="{Binding nombre}" TextColor="Black" BackgroundColor="Red"  />
             <!-- Last name-->
             <!-- Last name-->
             <Label Grid.Row="2" Grid.Column="1" Text="Apellidos" TextColor="Green" FontSize="15"/>
-            <Entry Grid.Row="3" Grid.Column="1" HeightRequest="40" Text="{Binding apellido}" TextColor="Black" BackgroundColor="Red" />
+            <Entry x:Name="Apellido" Grid.Row="3" Grid.Column="1" HeightRequest="40" Text="{Binding apellido}" TextColor="Black" BackgroundColor="Red" />
             <!-- Nombre de Usuario-->
             <Label Grid.Row="4" Grid.Column="0" Text="Nombre De usuario" TextColor="Green" FontSize="15" />
-            <Entry Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding nickName}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
+            <Entry x:Name="NickName" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding nickName}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
             <!-- Email-->
             <Label Grid.Row="6" Grid.Column="0" Text="Correo" TextColor="Green" FontSize="15" />
-            <Entry Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding email}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
+            <Entry x:Name="correo" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding email}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
             <!-- Password-->
             <Label Grid.Row="8" Grid.Column="0" Text="Contrseña" TextColor="Green" FontSize="15" />
-            <Entry Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True"  HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
+            <Entry x:Name="contraseña" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True"  HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
             
             <Label Grid.Row="10" Text="Confirma Contraseña" TextColor="Green" FontSize="15" />
-            <Entry Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True" Text="{Binding password}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
+            <Entry x:Name="ConfirmarContra" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True" Text="{Binding password}" HeightRequest="40" TextColor="Black" BackgroundColor="Red" />
             
             <!-- Fecha De nAcimiento-->
             <Label Grid.Row="12" Text="Fecha de Nacimiento" TextColor="Green" FontSize="15" />
@@ -51,6 +51,7 @@
              MaximumDate="2010-01-01"
              x:Name="datePicker"
              TextColor="Black"
+                
                 Date="{Binding fechaNacimiento}"
              Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2"/>
 
@@ -64,7 +65,7 @@
                     SelectedItem="{Binding genero}"       />
             
             <!--Boton de registro-->
-            <Button Text="Registrarse" BackgroundColor="Green" BorderRadius="20" TextColor="White" Command="{Binding CreateComand}" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button x:Name="RegistroButton" Text="Registrarse" BackgroundColor="Green" BorderRadius="20" TextColor="White" Command="{Binding CreateComand}" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2"  Clicked="RegistroButton_Clicked" />
 
         </Grid>
      
