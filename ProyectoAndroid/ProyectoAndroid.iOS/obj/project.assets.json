@@ -1512,24 +1512,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Miguel Arturo Rojas\\.nuget\\packages\\": {},
+    "C:\\Users\\52428\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ihealt\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+      "projectUniqueName": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
       "projectName": "ProyectoAndroid.iOS",
-      "projectPath": "C:\\ihealt\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
-      "packagesPath": "C:\\Users\\Miguel Arturo Rojas\\.nuget\\packages\\",
-      "outputPath": "C:\\ihealt\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
+      "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+      "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
+      "outputPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Miguel Arturo Rojas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\52428\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1538,13 +1538,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\ihealt\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
-              "projectPath": "C:\\ihealt\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
+            "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+              "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
             }
           }
         }

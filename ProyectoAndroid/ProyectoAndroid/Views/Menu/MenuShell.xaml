@@ -4,6 +4,7 @@
              x:Class="ProyectoAndroid.Views.Menu.MenuShell"
           xmlns:templates="clr-namespace:ProyectoAndroid.Templates"
         xmlns:Page1="clr-namespace:ProyectoAndroid.Views.SubMenu" 
+        xmlns:UsuarioCambiar="clr-namespace:ProyectoAndroid.Views"
         >
     <Shell.Resources>
 
@@ -88,11 +89,46 @@
     </Shell.FlyoutHeader>
 
 
-    <FlyoutItem Title="Dietas" Icon="Misviajes" >
+    <FlyoutItem Title="Dietas" Icon="dieta" >
         <Tab>
             <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Page1:Page1}"/>
         </Tab>
     </FlyoutItem>
 
-    
+    <FlyoutItem Title="Cesta" Icon="cesta" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ejercicios" Icon="Ejercicios" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Retos" Icon="retos" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Tabla" Icon="tabla" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Usuario" Icon="usuario" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate UsuarioCambiar:UsuarioCambiar}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Informacion" Icon="informacion" >
+        <Tab>
+            <ShellContent Style="{StaticResource MonkeysShell}" />
+        </Tab>
+    </FlyoutItem>
+
 </Shell>
