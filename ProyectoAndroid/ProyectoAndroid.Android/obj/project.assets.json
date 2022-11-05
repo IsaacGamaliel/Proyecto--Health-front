@@ -11,7 +11,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Toast/2.1.2": {
+      "Plugin.Toast/2.2.0": {
         "type": "package",
         "compile": {
           "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll": {},
@@ -1034,7 +1034,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
-          "Plugin.Toast": "2.1.2",
+          "Plugin.Toast": "2.2.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading": "2.4.8.956",
           "Xamarin.FFImageLoading.Forms": "2.4.5.922",
@@ -1078,10 +1078,10 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.Toast/2.1.2": {
-      "sha512": "MwEte2uS1vm49Gov+CigJaaxK8f5fFTeWAzcrpbIKvctiN0zAjhjV8cwmRK0A2SetjkhnrL08/vILnN9p5WEqg==",
+    "Plugin.Toast/2.2.0": {
+      "sha512": "PDq+r0P/WRu4YZimpwwfeLaTpHCVWlcw3MjJRC1be6Cg4ORfXL8YDz3HchnrRssRueUgP9ouwzLaQ4tLCD3Q4w==",
       "type": "package",
-      "path": "plugin.toast/2.1.2",
+      "path": "plugin.toast/2.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1100,6 +1100,7 @@
         "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.dll",
         "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.pdb",
         "lib/Xamarin.iOS10/Plugin.Toast.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll.mdb",
         "lib/Xamarin.iOS10/Plugin.Toast.pdb",
         "lib/Xamarin.iOS10/Plugin.Toast.xml",
         "lib/netstandard/Plugin.Toast.Abstractions.dll",
@@ -1107,7 +1108,7 @@
         "lib/netstandard/Plugin.Toast.deps.json",
         "lib/netstandard/Plugin.Toast.dll",
         "lib/netstandard/Plugin.Toast.pdb",
-        "plugin.toast.2.1.2.nupkg.sha512",
+        "plugin.toast.2.2.0.nupkg.sha512",
         "plugin.toast.nuspec"
       ]
     },
@@ -2405,6 +2406,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "Plugin.Toast >= 2.2.0",
       "ProyectoAndroid >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
@@ -2453,6 +2455,10 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "Plugin.Toast": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"

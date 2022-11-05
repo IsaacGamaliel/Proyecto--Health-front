@@ -41,22 +41,22 @@ namespace ProyectoAndroid.Views
             
         }
 
-        private async void LoginButton_Clicked(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(correo.Text))
-            {
-                await DisplayAlert("Advertencia", "El campo del correo es obligatorio", "Ok");
-                return;
-            }
+        //private async void LoginButton_Clicked(object sender, EventArgs e)
+        //{
+        //    if (string.IsNullOrWhiteSpace(correo.Text))
+        //    {
+        //        await DisplayAlert("Advertencia", "El campo del correo es obligatorio", "Ok");
+        //        return;
+        //    }
             
-            if(string.IsNullOrWhiteSpace(contraseña.Text))
-            {
-                await DisplayAlert("Advertencia", "El campo del contraseña es obligatorio", "Ok");
-                return;
-            }
+        //    if(string.IsNullOrWhiteSpace(contraseña.Text))
+        //    {
+        //        await DisplayAlert("Advertencia", "El campo del contraseña es obligatorio", "Ok");
+        //        return;
+        //    }
 
            
             
-        }
+        //}
     }
 }

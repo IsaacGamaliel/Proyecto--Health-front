@@ -80,24 +80,24 @@
                         </Label.GestureRecognizers>
                     </Label>
                     <Button
-                    x:Name="LoginButton"
-                    TranslationX="60"
-                    Opacity="0"
-                    Margin="60,30,0,0"
-                    HeightRequest="80"
-                    WidthRequest="150"
-                    AbsoluteLayout.LayoutBounds="1,1,1,.2"
-                    AbsoluteLayout.LayoutFlags="All"
-                    BackgroundColor="Green"
-                    CornerRadius="0"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                    Text="Iniciar sesion"
-                    TextColor="White"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand"
-                      Command="{Binding LoginCommand}" 
-                        Clicked="LoginButton_Clicked"/>
+                        x:Name="LoginButton"
+                        TranslationX="60"
+                        Opacity="0"
+                        Margin="60,30,0,0"
+                        HeightRequest="80"
+                        WidthRequest="150"
+                        AbsoluteLayout.LayoutBounds="1,1,1,.2"
+                        AbsoluteLayout.LayoutFlags="All"
+                        BackgroundColor="Green"
+                        CornerRadius="0"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        Text="Iniciar sesion"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                          Command="{Binding LoginCommand}" 
+                     />
                 </StackLayout>
                 <Label
                     Margin="20"

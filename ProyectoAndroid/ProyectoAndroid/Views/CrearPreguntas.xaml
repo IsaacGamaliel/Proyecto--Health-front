@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
+             x:Class="ProyectoAndroid.Views.CrearPreguntas">
+
+    <ContentPage.BindingContext>
+        <ViewModels:PreguntasViewModel>
+        </ViewModels:PreguntasViewModel>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="25, 45,25,0">
+                <Label Text="Genera tus pregunta llenando los campos" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+                <StackLayout>
+                    <Image Source="Miperfil.png"
+                        HorizontalOptions="Center"
+                        HeightRequest="100"
+                        WidthRequest="100" 
+                     />
+                    <!-- Ingrese los datos para generar su pregunta-->
+                    <!-- Tirulo-->
+                    <Label Text="Titulo" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding titulo}"  Keyboard="Text" TextColor="Black" x:Name="TxtNombre" Placeholder="Ingresa su titulo"/>
+                    </Frame>
+
+                    <Label Text="Descripcion" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding descripcion}"  Keyboard="Text" TextColor="Black" Placeholder="Ingrese Su descripcion"/>
+                    </Frame>
+
+                    <StackLayout Margin="0,8,0,0">
+                        <Button  Text="Crear Pregunta"  BackgroundColor="Green" HorizontalOptions="CenterAndExpand" Command="{Binding CrearPregCommand}" CornerRadius="15"></Button>
+                    </StackLayout>
+                    
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

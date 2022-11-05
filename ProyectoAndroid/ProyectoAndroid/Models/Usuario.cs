@@ -14,5 +14,6 @@ namespace ProyectoAndroid.Models
         public string fechaNacimiento { get; set; }
         public string genero { get; set; }
         public string password { get; set; }
+        public string idUsuario { get; set; }
     }
 }

@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Plugin.Toast" Version="2.1.2" />
+    <PackageReference Include="Plugin.Toast" Version="2.2.0" />
     <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.8.956" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.5.922" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.8.956" />
@@ -33,6 +33,9 @@
     <EmbeddedResource Update="Templates\HeaderPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\CrearPreguntas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Menu\MenuShell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -40,6 +43,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PaginaRegistro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PreguntaDetallada.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Preguntas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SubMenu\Page1.xaml">

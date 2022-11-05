@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
+             x:Class="ProyectoAndroid.Views.PreguntaDetallada">
+    <ContentPage.BindingContext>
+        <ViewModels:PreguntasViewModel>
+        </ViewModels:PreguntasViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="25, 45,25,0">
+                <Entry Text="{Binding idUsuario}" x:Name="Txtid" IsVisible="false" IsEnabled="False" TextColor="White"/>
+                <Entry Text="{Binding _id}" x:Name="TxtidPregunta" IsVisible="false" IsEnabled="False" TextColor="White"/>
+                <StackLayout>
+                    <Image Source="Miperfil.png"
+                        HorizontalOptions="Center"
+                        HeightRequest="100"
+                        WidthRequest="100" 
+                     />
+                    <!-- Ingrese los datos para generar su pregunta-->
+                    <!-- Tirulo-->
+                    <Label Text="Titulo" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding titulo}" IsEnabled="False"  TextColor="Black" x:Name="TxtTitulo" Placeholder="Ingresa su titulo"/>
+                    </Frame>
+
+                    <Label Text="Descripcion" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding descripcion}"  x:Name="TxtDescrip" IsEnabled="False" TextColor="Black" Placeholder="Ingrese Su descripcion"/>
+                    </Frame>
+
+                    <Label Text="Respuesta" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding descripcion}"  x:Name="TxtResp" IsEnabled="False" TextColor="Black" Placeholder="Ingrese Su descripcion"/>
+                    </Frame>
+
+                    <StackLayout Margin="0,10,0,0">
+                        <Button  Text="Salir"  BackgroundColor="Green" HorizontalOptions="CenterAndExpand" CornerRadius="15"></Button>
+                    </StackLayout>
+
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

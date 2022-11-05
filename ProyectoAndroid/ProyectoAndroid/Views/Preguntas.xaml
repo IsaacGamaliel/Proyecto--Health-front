@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
+             x:Class="ProyectoAndroid.Views.Preguntas"
+             BackgroundColor="#F4F4F4">
+    
+    <ContentPage.BindingContext>
+        <ViewModels:PreguntasViewModel>
+        </ViewModels:PreguntasViewModel>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="FillAndExpand">
+            <Label Text="Mis Preguntas" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button  Text="Crear Pregunta"  BackgroundColor="Green" HorizontalOptions="Center" Clicked="Button_Clicked" CornerRadius="15"></Button>
+            <ListView x:Name="EventListView"
+                      Margin="0,8,0,0"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      ItemsSource="{Binding Items}"
+                      ItemTapped="EventListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ViewCell  >
+                            <Frame CornerRadius="10" Padding="10" BackgroundColor="Red" VerticalOptions="FillAndExpand" Margin="0,8,0,0">
+                                <Grid  VerticalOptions="FillAndExpand" >
+                                    <StackLayout HorizontalOptions="FillAndExpand" >
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="30"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Titulo:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,32,0,0" >
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="28"
+                                           MaxLines="2"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding titulo}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,75,0,0">
+                                        <Image
+                                            WidthRequest = "80" HeightRequest = "80"
+                                            Source="logo1.png"
+                                            HorizontalOptions="FillAndExpand"
+                                            
+                                             />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,86 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
              x:Class="ProyectoAndroid.Views.UsuarioCambiar"
              BackgroundColor="#F4F4F4">
-    <ScrollView>
 
-        <StackLayout Margin="25, 45,25,0">
-            <Label Text="Infomación Del usuario" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Entry Text="" IsVisible="false"/>
-            <StackLayout>
-                <Image Source="Miperfil.png"
-                    HorizontalOptions="Center"
-                    HeightRequest="100"
-                    WidthRequest="100" 
-                 />
-                <!-- Basic information-->
-                <!-- Nombre-->
-                <Label Text="Nombre" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="Nombre" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtNombre" Placeholder="Ingresa tu nombre"/>
-                </Frame>
+    <ContentPage.BindingContext>
+        <ViewModels:PerfilViewModel>
+        </ViewModels:PerfilViewModel>
+    </ContentPage.BindingContext>
 
-                <!-- Apellidos -->
-                <Label Text="Apellidos" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="Apellidos" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtApellidos" Placeholder="Ingresa tus Apellidos"/>
-                </Frame>
+    <ContentPage.Content>
 
-                <!-- NickName -->
-                <Label Text="Nombre de Usuario" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="NickName" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtNickName" Placeholder="Ingresa tu NickName"/>
-                </Frame>
+        <ScrollView>
 
-                <!-- Email -->
-                <Label Text="Correo" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="Correo" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtCorreo" Placeholder="Ingresa tu Correo"/>
-                </Frame>
-
-                <!-- Contrseña -->
-                <Label Text="Contrseña" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="Contrseña" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtContrseña" Placeholder="Ingresa tu Contrseña"/>
-                </Frame>
-
-                <!-- Fecha de Nacimiento -->
-                <Label Text="Fecha de Nacimiento" FontSize="Subtitle" TextColor="Green"/>
+            <StackLayout Margin="25, 45,25,0">
+                <Label Text="Infomación Del usuario" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Entry Text="{Binding _id}" x:Name="Txtid" IsVisible="false"/>
+                <Entry Text="{Binding idUsuario}" x:Name="TxtIdUsu" IsVisible="false"/>
+                <Entry Text="{Binding genero}" x:Name="TxtG" IsVisible="false"/>
+                <Entry Text="{Binding fechaNacimiento}" x:Name="pkFecha" IsVisible="false"/>
                 <StackLayout>
-                    <DatePicker MinimumDate="1970-01-01"
-                                    MaximumDate="2025-01-01"
-                                    x:Name="pkFecha"
-                                    IsEnabled="False"
-                                    BackgroundColor="Red"
-                                    >
-                    </DatePicker>
+                    <Image Source="Miperfil.png"
+                        HorizontalOptions="Center"
+                        HeightRequest="100"
+                        WidthRequest="100" 
+                     />
+                    <!-- Infoamcion que se puede actualizar-->
+                    <!-- Nombre-->
+                    <Label Text="Nombre" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding nombre}"  Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtNombre" Placeholder="Ingresa tu nombre"/>
+                    </Frame>
+
+                    <!-- Apellidos -->
+                    <Label Text="Apellidos" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding apellido}" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtApellidos" Placeholder="Ingresa tus Apellidos"/>
+                    </Frame>
+
+                    <!-- NickName -->
+                    <Label Text="Nombre de Usuario" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding nickName}" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtNickName" Placeholder="Ingresa tu NickName"/>
+                    </Frame>
+
+                    <!-- Email -->
+                    <Label Text="Correo" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Entry Text="{Binding email}" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="TxtCorreo" Placeholder="Ingresa tu Correo"/>
+                    </Frame>
+
+
+
+                    <Button x:Name ="btnEdi" Text="Editar"  BackgroundColor="Green" Clicked="btnEdi_Clicked" IsVisible="true" CornerRadius="15"></Button>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name ="btnGua" Text="Guardar"  BackgroundColor="Green" Clicked="btnEdi_Clicked" IsVisible="false" CornerRadius="15" HorizontalOptions="EndAndExpand" Command="{Binding ActualizarComand}"></Button>
+
+                        <Button x:Name="btnCancelar" Text="Cancelar" Background="Red" Clicked="btnCancelar_Clicked" IsVisible="false" CornerRadius="15" HorizontalOptions="StartAndExpand"></Button>
+                    </StackLayout>
+
+
+
                 </StackLayout>
-                <!-- Genero -->
-                <Label Text="Genero" FontSize="Subtitle" TextColor="Green"/>
-                <Frame HasShadow="False" CornerRadius="15" BackgroundColor="Red" x:Name="frameG" IsVisible="true" HeightRequest="40" WidthRequest="40">
-                    <Entry Text="Genero" Keyboard="Text" IsEnabled="False" TextColor="Black" x:Name="SFtxtGeneroP" IsVisible="true" Placeholder="Ingresa tu Genero"/>
-                </Frame>
-
-                <StackLayout>
-                    <Picker 
-                         BackgroundColor="Red"
-                        
-                         x:Name="GeneroP"
-                         TextColor="Black"
-                         IsVisible="false"
-                    />
-                </StackLayout>
-
-                <Button x:Name ="btnEdi" Text="Editar"  BackgroundColor="Green" Clicked="btnEdi_Clicked" IsVisible="true" CornerRadius="15"></Button>
-
-                <Button x:Name ="btnGua" Text="Guardar"  BackgroundColor="Green" Clicked="btnEdi_Clicked" IsVisible="false" CornerRadius="15"></Button>
-
 
             </StackLayout>
-            
-        </StackLayout>
 
 
-    </ScrollView>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

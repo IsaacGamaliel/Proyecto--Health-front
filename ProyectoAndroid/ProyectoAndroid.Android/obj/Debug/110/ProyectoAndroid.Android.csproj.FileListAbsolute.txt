@@ -1280,6 +1280,14 @@ C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Androi
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\logo1.png
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\miperfil.png
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\logonombre.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\cesta.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\dieta.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\ejercicios.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\informacion.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\retos.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\tabla.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\usuario.png
+C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\preguntas.png
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\uploadflags.txt
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\resolvedassemblies.hash
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\android\assets\FFImageLoading.dll
@@ -1840,10 +1848,3 @@ C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Androi
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\cesta.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\dieta.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\ejercicios.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\informacion.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\retos.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\tabla.png
-C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res\drawable\usuario.png

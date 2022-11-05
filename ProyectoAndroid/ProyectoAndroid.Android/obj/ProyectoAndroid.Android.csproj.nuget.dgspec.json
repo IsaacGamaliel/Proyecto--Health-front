@@ -43,6 +43,10 @@
       "frameworks": {
         "monoandroid11.0": {
           "dependencies": {
+            "Plugin.Toast": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -108,7 +112,7 @@
             },
             "Plugin.Toast": {
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[2.2.0, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
