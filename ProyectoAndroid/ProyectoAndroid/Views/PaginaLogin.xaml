@@ -12,7 +12,10 @@
     </ContentPage.BindingContext>
     
     <ScrollView>
-        <AbsoluteLayout>
+        <Grid>
+            
+        
+            <AbsoluteLayout>
             <Image
             x:Name="Logo"
             TranslationY="-60"
@@ -124,10 +127,18 @@
                 
             </StackLayout>
         </AbsoluteLayout>
+        
+            <Grid Opacity=".8" 
+                  IsVisible="{Binding IsBusy}"
+                  BackgroundColor="#A2A0A0">
+                <ActivityIndicator
+                    IsRunning="{Binding IsBusy}"
+                    Color="Green"
+                    HorizontalOptions="Center"></ActivityIndicator>
+            </Grid>
 
-        
-           
-        
+
+        </Grid>
     </ScrollView>
     
 </ContentPage>

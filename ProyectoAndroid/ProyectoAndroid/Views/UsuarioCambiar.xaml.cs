@@ -73,7 +73,7 @@ namespace ProyectoAndroid.Views
             TxtApellidos.Text = consultaget.apellido;
             TxtNickName.Text = consultaget.nickName;
             TxtCorreo.Text = consultaget.email;
-            pkFecha.Text = consultaget.fechaNacimiento;
+            //pkFecha.Text = consultaget.fechaNacimiento;
         }
     }
 }

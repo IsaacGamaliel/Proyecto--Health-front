@@ -35,11 +35,15 @@ namespace ProyectoAndroid.ViewModels
             {
                 return new Command(async () =>
                 {
+                    
                     try
                     {
+                        
                         var response = await apiRest.CreateUsuario(nombre, apellido, nickName, email, fechaNacimiento, genero, password);
+                        
                         if (response == null)
                         {
+                            
                             var res = await App.Current.MainPage.DisplayAlert("Error", "Algunos Campos estan vacios", "", "Ok");
                         }
                         else if (response == "{\"message\":\"This email already exist!\"}")
@@ -48,12 +52,15 @@ namespace ProyectoAndroid.ViewModels
                         }
                         else
                         {
+                            
                             Application.Current.MainPage = new PaginaLogin();
+                            
                             //CrossToastPopUp.Current.ShowToastSuccess("Registrado");
                         }
                     }
                     catch (Exception ex)
                     {
+                        
                         var res = await App.Current.MainPage.DisplayAlert("Error", "Revisa tus campos", "", "Ok");
                         Console.WriteLine(ex);
                     }
@@ -71,35 +78,38 @@ namespace ProyectoAndroid.ViewModels
                 return new Command(async () =>
                 {
 
-
+                    IsBusy = true;
                     try
                     {
                         var response = await apiRest.Login(email, password);
-
+                        
                         if (response == "{\"message\":\"Password does not exist\"}")
                         {
                             var res = await App.Current.MainPage.DisplayAlert("Error", "Contraseña Incorrecta", "", "Ok");
+                            IsBusy = false;
                         }
                         else if (response == "{\"message\":\"Email does not exist\"}")
                         {
                             var res = await App.Current.MainPage.DisplayAlert("Error", "Correo No existe", "", "Ok");
+                            IsBusy = false;
                         }
                         else
                         {
-
                             Usuario usuario = JsonConvert.DeserializeObject<Usuario>(response);
 
                             Application.Current.Properties["jsonUsuario"] = JsonConvert.SerializeObject(usuario);
                             await Application.Current.SavePropertiesAsync();
 
                             Application.Current.MainPage = new MenuShell();
+                            IsBusy = false;
                             //CrossToastPopUp.Current.ShowToastSuccess("Inicio exitoso");
                         }
 
                     }
                     catch (Exception ex)
-                    {
+                    { 
                         var res = await App.Current.MainPage.DisplayAlert("Error", "Revisa tus campos vacios", "", "Ok");
+                        IsBusy = false;
                         Console.WriteLine(ex);
 
                     }

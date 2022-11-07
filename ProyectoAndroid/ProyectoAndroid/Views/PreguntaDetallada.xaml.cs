@@ -37,5 +37,12 @@ namespace ProyectoAndroid.Views
             }
 
         }
+
+        //public async void Button_Clicked(object sender, EventArgs e)
+        //{
+        //    //Bug
+        //    //await Navigation.PushAsync(new Preguntas());
+        //    //await Navigation.PushModalAsync(new NavigationPage(new Preguntas()));
+        //}
     }
 }
