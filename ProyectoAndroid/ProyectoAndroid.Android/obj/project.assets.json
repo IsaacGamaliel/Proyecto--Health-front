@@ -2419,11 +2419,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\ProyectoAndroid.Android.csproj",
+      "projectUniqueName": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\ProyectoAndroid.Android.csproj",
       "projectName": "ProyectoAndroid.Android",
-      "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\ProyectoAndroid.Android.csproj",
+      "projectPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\ProyectoAndroid.Android.csproj",
       "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\obj\\",
+      "outputPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2445,8 +2445,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
-              "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
+            "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+              "projectPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
             }
           }
         }

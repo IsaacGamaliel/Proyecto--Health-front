@@ -10,7 +10,7 @@ namespace ProyectoAndroid.Services
     public class ApiRest
     {
         //Url donde se consume la api creada
-        private string URL = "http://192.168.67.91:4000/";
+        private string URL = "http://192.168.0.8:4000/";
 
         //Se consume metodo de Crear Usuario
         public async Task<string> CreateUsuario(string nombre, string apellido, string nickName, string email, string fechaNacimiento, string genero,  string password)

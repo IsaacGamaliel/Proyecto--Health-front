@@ -3,20 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:renderers="clr-namespace:XamUIDemo.Renderers" 
              xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
-             x:Class="ProyectoAndroid.Views.PaginaLogin"
+             x:Class="ProyectoAndroid.Views.UsuariosM.PaginaLogin"
              BackgroundColor="#F4F4F4"
              NavigationPage.HasNavigationBar="False">
-
+    
     <ContentPage.BindingContext>
         <ViewModels:UsuarioViewModel></ViewModels:UsuarioViewModel>
     </ContentPage.BindingContext>
-    
+
     <ScrollView>
         <Grid>
-            
-        
+
+
             <AbsoluteLayout>
-            <Image
+                <Image
             x:Name="Logo"
             TranslationY="-60"
             WidthRequest="80"
@@ -27,13 +27,13 @@
             Source="logo1.png"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand" />
-           
-            <StackLayout
+
+                <StackLayout
                 AbsoluteLayout.LayoutBounds="1,1,1,.6"
                 AbsoluteLayout.LayoutFlags="All"
                 Spacing="10">
 
-                <renderers:PancakeView
+                    <renderers:PancakeView
                 x:Name="EmailPancake"
                 TranslationX="-60"
                 Opacity="0"
@@ -43,15 +43,15 @@
                 CornerRadius="0,5,0,5"
                 BackgroundColor="Red"
                 VerticalOptions="Center">
-                    <renderers:BorderlessEntry
+                        <renderers:BorderlessEntry
                     FontSize="18"
                     Placeholder="Correo"
                     PlaceholderColor="Black"
                     TextColor="Black"
                         x:Name="correo"
                         Text="{Binding email}"/>
-                </renderers:PancakeView>
-                <renderers:PancakeView
+                    </renderers:PancakeView>
+                    <renderers:PancakeView
                     x:Name="PassPancake"
                     TranslationX="-60"
                     Opacity="0"
@@ -61,7 +61,7 @@
                     HeightRequest="80"
                     BackgroundColor="Red"
                     VerticalOptions="Center">
-                    <renderers:BorderlessEntry
+                        <renderers:BorderlessEntry
                     FontSize="18"
                     IsPassword="True"
                     Placeholder="Contraseña"
@@ -69,20 +69,20 @@
                     TextColor="Black" 
                         x:Name="contraseña"
                         Text="{Binding password}"/>
-                </renderers:PancakeView>
-                <StackLayout Orientation="Horizontal">
-                    <Label
+                    </renderers:PancakeView>
+                    <StackLayout Orientation="Horizontal">
+                        <Label
                         Margin="30,30,0,0"
                         FontSize="18"
                         Text="Crear Cuenta"
                         TextColor="Green"
                         HorizontalOptions="StartAndExpand"
                         VerticalOptions="CenterAndExpand" >
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Registro" ></TapGestureRecognizer>
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <Button
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Registro" ></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Button
                         x:Name="LoginButton"
                         TranslationX="60"
                         Opacity="0"
@@ -101,8 +101,8 @@
                         VerticalOptions="FillAndExpand"
                           Command="{Binding LoginCommand}" 
                      />
-                </StackLayout>
-                <Label
+                    </StackLayout>
+                    <Label
                     Margin="20"
                     AbsoluteLayout.LayoutBounds="1,1,1,.1"
                     AbsoluteLayout.LayoutFlags="All"
@@ -110,24 +110,24 @@
                     TextColor="Black"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="EndAndExpand">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer ></TapGestureRecognizer>
-                    </Label.GestureRecognizers>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Al registrarte, aceptas nuestros" />
-                            <Span
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer ></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Al registrarte, aceptas nuestros" />
+                                <Span
                                 Text=" Términos y condiciones"
                                 TextColor="Green"
                                 TextDecorations="Underline" 
-                                FontSize="14"/> 
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                
-            </StackLayout>
-        </AbsoluteLayout>
-        
+                                FontSize="14"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </StackLayout>
+            </AbsoluteLayout>
+
             <Grid Opacity=".8" 
                   IsVisible="{Binding IsBusy}"
                   BackgroundColor="#A2A0A0">
@@ -140,5 +140,4 @@
 
         </Grid>
     </ScrollView>
-    
 </ContentPage>

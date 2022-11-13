@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAndroid.Views.InformacionE"
+             BackgroundColor="#F4F4F4">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" >
+            <StackLayout Margin="10, 20,10,0">
+                <Image 
+                Aspect="AspectFill"
+                Source="logo1.png"
+                HorizontalOptions="EndAndExpand"
+                HeightRequest="70" WidthRequest="70"/>
+            </StackLayout>
+
+
+            <StackLayout Margin="0, 10,0,0">
+                <Label Text="Acerca de ¡Health" HorizontalOptions="Center" FontSize="Title" TextColor="Green" FontAttributes = "Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="0, 20,0,0">
+                <Label Text="Nuestra aplicación será de gran ayuda a la hora de tratar con los pacientes, ya que servirá para confirmar si siguen los tratamientos adecuadamente. 'A través de ellas podemos ver si están comiendo lo que corresponde o si realizan las propuestas de las dietas 
+                                establecidas' "
+
+                HorizontalTextAlignment="Center" FontSize="Subtitle" TextColor="Green" FontAttributes = "Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="25, 45,25,0"  HorizontalOptions="Fill">
+                <Label Text="Desarrollado y creado por:" HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black" FontAttributes = "Bold"/>
+                <Label Text="¡Health" TextDecorations="Underline" HorizontalTextAlignment="Start" HorizontalOptions="Start" FontSize="Small" TextColor="#3296d2" FontAttributes = "Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="25, 45,25,0"  HorizontalOptions="Center">
+                <Label  Text="Aviso de privacidad" HorizontalOptions="Center" FontSize="Micro" TextColor="Black" FontAttributes = "Bold"/>
+                <Label Text="© Derechos reservados"  HorizontalOptions="Center" FontSize="Micro" TextColor="Green" FontAttributes = "Bold" 
+                       />
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

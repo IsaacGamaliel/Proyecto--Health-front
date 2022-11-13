@@ -2,17 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
-             x:Class="ProyectoAndroid.Views.CrearPreguntas">
-
+             x:Class="ProyectoAndroid.Views.Preguntas.PreguntaDetallada"
+             BackgroundColor="#F4F4F4">
     <ContentPage.BindingContext>
         <ViewModels:PreguntasViewModel>
         </ViewModels:PreguntasViewModel>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="25, 45,25,0">
-                <Label Text="Genera tus pregunta llenando los campos" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Entry Text="{Binding idUsuario}" x:Name="Txtid" IsVisible="false" IsEnabled="False" TextColor="White"/>
+                <Entry Text="{Binding _id}" x:Name="TxtidPregunta" IsVisible="false" IsEnabled="False" TextColor="White"/>
+                <Label Text="Detalle Pregunta" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" ></Label>
+
                 <StackLayout>
                     <Image Source="Miperfil.png"
                         HorizontalOptions="Center"
@@ -23,19 +26,18 @@
                     <!-- Tirulo-->
                     <Label Text="Titulo" FontSize="Subtitle" TextColor="Green"/>
                     <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
-                        <Entry Text="{Binding titulo}"  Keyboard="Text" TextColor="Black" x:Name="TxtNombre" Placeholder="Ingresa su titulo"/>
+                        <Label Text="{Binding titulo}"  x:Name="TxtTitulo" IsEnabled="False" TextColor="Black" MaxLines="4"></Label>
                     </Frame>
 
                     <Label Text="Descripcion" FontSize="Subtitle" TextColor="Green"/>
                     <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
-                        <Entry Text="{Binding descripcion}"  Keyboard="Text" TextColor="Black" Placeholder="Ingrese Su descripcion"/>
+                        <Label Text="{Binding descripcion}" x:Name="TxtDescrip" IsEnabled="False" TextColor="Black" MaxLines="4"></Label>
                     </Frame>
 
-                    <StackLayout Margin="0,8,0,0">
-                        <Button  Text="Crear Pregunta"  BackgroundColor="Green" HorizontalOptions="CenterAndExpand" Command="{Binding CrearPregCommand}" CornerRadius="15"></Button>
-                    </StackLayout>
-                    
-
+                    <Label Text="Respuesta" FontSize="Subtitle" TextColor="Green"/>
+                    <Frame  CornerRadius="15" BackgroundColor="White" HeightRequest="40" WidthRequest="40" BorderColor="Red">
+                        <Label Text="{Binding respuesta}" x:Name="TxtResp" IsEnabled="False" TextColor="Black" MaxLines="4"></Label>
+                    </Frame>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

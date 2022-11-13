@@ -1,14 +1,14 @@
-﻿using System;
+﻿using ProyectoAndroid.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ProyectoAndroid.Models;
-using ProyectoAndroid.Views;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ProyectoAndroid.Views
+namespace ProyectoAndroid.Views.Preguntas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PreguntaDetallada : ContentPage
@@ -37,12 +37,5 @@ namespace ProyectoAndroid.Views
             }
 
         }
-
-        //public async void Button_Clicked(object sender, EventArgs e)
-        //{
-        //    //Bug
-        //    //await Navigation.PushAsync(new Preguntas());
-        //    //await Navigation.PushModalAsync(new NavigationPage(new Preguntas()));
-        //}
     }
 }

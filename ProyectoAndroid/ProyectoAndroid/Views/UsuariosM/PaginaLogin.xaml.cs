@@ -1,6 +1,4 @@
-﻿using Plugin.Toast;
-using ProyectoAndroid.Views.Menu;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamUIDemo.Animations;
 
-namespace ProyectoAndroid.Views
+namespace ProyectoAndroid.Views.UsuariosM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PaginaLogin : ContentPage
@@ -32,13 +30,13 @@ namespace ProyectoAndroid.Views
 
             });
         }
-        
+
 
         private void Registro(object sender, EventArgs e)
         {
             Application.Current.MainPage = new PaginaRegistro();
-            
-            
+
+
         }
 
         //private async void LoginButton_Clicked(object sender, EventArgs e)
@@ -48,15 +46,15 @@ namespace ProyectoAndroid.Views
         //        await DisplayAlert("Advertencia", "El campo del correo es obligatorio", "Ok");
         //        return;
         //    }
-            
+
         //    if(string.IsNullOrWhiteSpace(contraseña.Text))
         //    {
         //        await DisplayAlert("Advertencia", "El campo del contraseña es obligatorio", "Ok");
         //        return;
         //    }
 
-           
-            
+
+
         //}
     }
 }

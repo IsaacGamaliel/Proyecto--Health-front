@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ProyectoAndroid.Views
+namespace ProyectoAndroid.Views.Preguntas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Preguntas : ContentPage
@@ -36,5 +36,4 @@ namespace ProyectoAndroid.Views
             await Navigation.PushAsync(new CrearPreguntas());
         }
     }
-    
 }

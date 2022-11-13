@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
-             x:Class="ProyectoAndroid.Views.Preguntas"
-             BackgroundColor="#F4F4F4">
-    
+             x:Class="ProyectoAndroid.Views.Preguntas.Preguntas"
+            BackgroundColor="#F4F4F4">
+
     <ContentPage.BindingContext>
         <ViewModels:PreguntasViewModel>
         </ViewModels:PreguntasViewModel>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
         <StackLayout  VerticalOptions="FillAndExpand">
             <Label Text="Mis Preguntas" FontSize="20" FontAttributes="Bold" TextColor="Green" VerticalOptions="Center" HorizontalOptions="Center" />

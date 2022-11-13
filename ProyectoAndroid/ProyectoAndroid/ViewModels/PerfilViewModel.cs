@@ -25,7 +25,37 @@ namespace ProyectoAndroid.ViewModels
 
         public string idUsuario { get; set; }
 
-        
+        //public PerfilViewModel()
+        //{
+        //    UsuarioId();
+        //    //usuarios();
+        //}
+
+
+
+        //private async void UsuarioId()
+        //{
+        //    try
+        //    {
+        //        Usuario usuario = JsonConvert.DeserializeObject<Usuario>(Application.Current.Properties["jsonUsuario"].ToString());
+        //        idUsuario = $"{usuario._id}";
+        //        var response = await apiRest.ConsultaUsuario(idUsuario);
+        //        Usuario consulta = JsonConvert.DeserializeObject<Usuario>(response);
+        //        this.idUsuario = consulta._id.ToString();
+        //        this.nombre = consulta.nombre.ToString();
+        //        this.apellido = consulta.apellido.ToString();
+        //        this.fechaNacimiento = consulta.fechaNacimiento.ToString();
+        //        //this.Correo = consulta.Correo;
+        //        //this.Phone = consulta.Phone;
+        //        //this.Url = consulta.Url;
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        Console.WriteLine(ex);
+        //    }
+
+        //}
         //Actualizar usuario
         public ICommand ActualizarComand
         {
@@ -67,7 +97,7 @@ namespace ProyectoAndroid.ViewModels
                         {
                             
                             Application.Current.MainPage = new MenuShell();
-                            //CrossToastPopUp.Current.ShowToastSuccess("Actualizado con Éxito");
+                            var res = await App.Current.MainPage.DisplayAlert("Exito", "Actualizado Correctamente", "", "Ok");
 
                         }
 

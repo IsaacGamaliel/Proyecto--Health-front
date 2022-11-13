@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {}
+    "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {}
   },
   "projects": {
-    "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {
+    "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+        "projectUniqueName": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
         "projectName": "ProyectoAndroid.iOS",
-        "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
+        "projectPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
         "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
-        "outputPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
+        "outputPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -33,8 +33,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
-                "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
+              "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+                "projectPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj"
               }
             }
           }
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
+    "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
+        "projectUniqueName": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
         "projectName": "ProyectoAndroid",
-        "projectPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
+        "projectPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\ProyectoAndroid.csproj",
         "packagesPath": "C:\\Users\\52428\\.nuget\\packages\\",
-        "outputPath": "C:\\ProyectoAndroid\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\obj\\",
+        "outputPath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

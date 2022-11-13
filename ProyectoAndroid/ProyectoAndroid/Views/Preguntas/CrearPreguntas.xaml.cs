@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ProyectoAndroid.Views
+namespace ProyectoAndroid.Views.Preguntas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CrearPreguntas : ContentPage

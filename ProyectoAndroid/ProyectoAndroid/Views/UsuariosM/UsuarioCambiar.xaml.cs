@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ProyectoAndroid.Views
+namespace ProyectoAndroid.Views.UsuariosM
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UsuarioCambiar : ContentPage
@@ -32,7 +32,7 @@ namespace ProyectoAndroid.Views
         {
             InitializeComponent();
             consultaU();
-            
+
         }
 
         private void btnEdi_Clicked(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace ProyectoAndroid.Views
             TxtNickName.IsEnabled = true;
             TxtCorreo.IsEnabled = true;
             pkFecha.IsEnabled = true;
-           
+
 
 
             btnEdi.IsVisible = false;
@@ -60,7 +60,7 @@ namespace ProyectoAndroid.Views
 
         public async void consultaU()
         {
-            
+
             Usuario usuario = JsonConvert.DeserializeObject<Usuario>(Application.Current.Properties["jsonUsuario"].ToString());
             idUsuario = $"{usuario._id}";
 
@@ -73,7 +73,8 @@ namespace ProyectoAndroid.Views
             TxtApellidos.Text = consultaget.apellido;
             TxtNickName.Text = consultaget.nickName;
             TxtCorreo.Text = consultaget.email;
-            //pkFecha.Text = consultaget.fechaNacimiento;
+            pkFecha.Text = consultaget.fechaNacimiento;
         }
+
     }
 }

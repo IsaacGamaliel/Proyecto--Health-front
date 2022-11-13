@@ -4,6 +4,7 @@ using ProyectoAndroid.Models;
 using ProyectoAndroid.Services;
 using ProyectoAndroid.Views;
 using ProyectoAndroid.Views.Menu;
+using ProyectoAndroid.Views.UsuariosM;
 using System;
 using System.Windows.Input;
 using Xamarin.Forms;
