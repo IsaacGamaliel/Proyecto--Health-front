@@ -1851,7 +1851,6 @@ C:\ProyectoAndroid\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Androi
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\build.props
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\adb.props
-C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.csproj.AssemblyReference.cache
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\stamp\_BuildLibraryImportsCache.stamp
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\res.flag
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\lp\48\jl\files.cache
@@ -1874,8 +1873,6 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\R.txt
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\R.cs.flag
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.csproj.CoreCompileInputs.cache
-C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.dll
-C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.pdb
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\ProyectoAndroid.Android.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\ProyectoAndroid.Android.pdb
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\com.companyname.proyectoandroid.apk
@@ -1885,7 +1882,10 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\com.
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\com.companyname.proyectoandroid-Signed.apk.idsig
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\ProyectoAndroid.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\bin\Debug\ProyectoAndroid.pdb
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.csproj.AssemblyReference.cache
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.csproj.CopyComplete
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.dll
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\ProyectoAndroid.Android.pdb
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\android\bin\com.companyname.proyectoandroid.apk
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\android\bin\base.zip
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid.Android\obj\Debug\110\android\bin\com.companyname.proyectoandroid.aab

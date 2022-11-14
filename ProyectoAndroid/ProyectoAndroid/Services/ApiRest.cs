@@ -10,7 +10,7 @@ namespace ProyectoAndroid.Services
     public class ApiRest
     {
         //Url donde se consume la api creada
-        private string URL = "http://192.168.0.8:4000/";
+        private string URL = "http://192.168.129.91:4000/";
 
         //Se consume metodo de Crear Usuario
         public async Task<string> CreateUsuario(string nombre, string apellido, string nickName, string email, string fechaNacimiento, string genero,  string password)
@@ -197,6 +197,33 @@ namespace ProyectoAndroid.Services
                 var response = new HttpResponseMessage();
                 response = await client.PostAsync(string.Concat(URL, "comments/ShowComments"), from);
                 resultado = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                resultado = "";
+                Debug.WriteLine(ex.Message);
+            }
+            return resultado;
+        }
+
+        //Consulta para traer los alimentos de la api
+
+        public async Task<string> ConsultaAlimentos(string categoriaAlimento)
+        {
+            string resultado = "";
+            try
+            {
+
+                MultipartFormDataContent from = new MultipartFormDataContent();
+                var contenido = new StringContent(categoriaAlimento);
+                from.Add(contenido, "categoria");
+                HttpClient client = new HttpClient();
+
+
+                var response = new HttpResponseMessage();
+                response = await client.PostAsync(string.Concat(URL, "foods/ShowFoods"), from);
+                resultado = await response.Content.ReadAsStringAsync();
+
             }
             catch (Exception ex)
             {

@@ -7,7 +7,7 @@
         xmlns:Preg="clr-namespace:ProyectoAndroid.Views.Preguntas"
         xmlns:UsuarioC="clr-namespace:ProyectoAndroid.Views.UsuariosM"
         xmlns:Info="clr-namespace:ProyectoAndroid.Views"
-        >
+        xmlns:SelectA="clr-namespace:ProyectoAndroid.Views.Alimentos">
     <Shell.Resources>
 
         <ResourceDictionary>
@@ -117,7 +117,7 @@
 
     <FlyoutItem Title="Tabla" Icon="tabla" >
         <Tab>
-            <ShellContent Style="{StaticResource MonkeysShell}" />
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate SelectA:SeleccionarAli}" />
         </Tab>
     </FlyoutItem>
 
@@ -133,7 +133,7 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Informacion" Icon="informacion" >
+    <FlyoutItem Title="Informacion" Icon="informacion">
         <Tab>
             <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Info:InformacionE}" />
         </Tab>

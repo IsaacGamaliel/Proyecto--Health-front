@@ -14,16 +14,16 @@ namespace ProyectoAndroid
             InitializeComponent();
             //Se comenta codigo para cuando la sesion quede activa
 
-            //if (Application.Current.Properties.ContainsKey("jsonUsuario"))
-            //{
-            //    Application.Current.MainPage = new MenuShell();
-            //}
-            //else
-            //{
-            //    MainPage = new PaginaLogin();
-            //}
+            if (Application.Current.Properties.ContainsKey("jsonUsuario"))
+            {
+                Application.Current.MainPage = new MenuShell();
+            }
+            else
+            {
+                MainPage = new PaginaLogin();
+            }
 
-            MainPage = new PaginaLogin();
+            //MainPage = new PaginaLogin();
 
         }
 
