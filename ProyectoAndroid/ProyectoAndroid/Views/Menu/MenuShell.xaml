@@ -74,6 +74,13 @@
                           >
             <StackLayout Padding="0,0,0,0">
 
+                <Button x:Name="btnCerrar" 
+                                 Text="Cerrar Sesión"
+                                 HorizontalOptions="StartAndExpand"
+                                 BackgroundColor="IndianRed" TextColor="White"
+                                 CornerRadius="20"  FontSize="18" Clicked="btnCerrar_Clicked">
+
+                </Button>
 
                 <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Padding="1">
                     <Image 

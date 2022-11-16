@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAndroid.Views.Alimentos.CerealesDet"
+             BackgroundColor="#F4F4F4">
+
+    <ContentPage.Content>
+        <!-- Main layout and Upper components-->
+        <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,*">
+            <!-- Background Image-->
+            <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Aspect="AspectFill" Opacity="0.7" Source="https://previews.123rf.com/images/dusanzidar/dusanzidar1704/dusanzidar170400037/76562563-la-selecci%C3%B3n-de-alimentos-saludables-en-el-fondo-blanco-alimentos-de-la-dieta-saludable-para-el-cole.jpg"/>
+
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HasShadow="False" VerticalOptions="EndAndExpand" Margin="30,50" Padding="20,0,0,20"  CornerRadius="40" HeightRequest="480">
+                <ScrollView HorizontalScrollBarVisibility="Never">
+                    <Grid RowSpacing="{OnPlatform iOS='20'}" VerticalOptions="Center" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*" Padding="60,0,20,0" >
+
+                        <!-- Datos-->
+                        <Label Text="Informacion" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='30',iOS='30'}" HorizontalOptions="Center" ></Label>
+
+
+                        <Label  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Nombre:" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='20',iOS='30'}" VerticalOptions="Start" MaxLines="2"/>
+
+                        <Label x:Name="Textnombre" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Text="" FontSize="{OnPlatform Android='18',iOS='30'}" FontAttributes="Bold" TextColor="#353f5f" MaxLines="2"/>
+
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Padding="0" Grid.Row="3" Text="Calorias:" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='20',iOS='30'}" VerticalOptions="Start"  />
+
+                        <Label x:Name="TextCal" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="4" Text="" FontSize="{OnPlatform Android='18',iOS='30'}" FontAttributes="Bold" TextColor="#353f5f"/>
+
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Padding="0" Grid.Row="5" Text="Proteinas:" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='20',iOS='30'}" VerticalOptions="Start"  />
+                        <Label x:Name="TextP" Grid.Column="0" Grid.ColumnSpan="6" Grid.Row="6" Text="" FontSize="{OnPlatform Android='18',iOS='30'}" FontAttributes="Bold" TextColor="#353f5f"/>
+
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Padding="0" Grid.Row="7" Text="Lipidos:" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='20',iOS='30'}" VerticalOptions="Start"  />
+                        <Label x:Name="TextL" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="8" Text="" FontSize="{OnPlatform Android='18',iOS='30'}" FontAttributes="Bold" TextColor="#353f5f"/>
+
+                        <Label Grid.Column="0" Grid.ColumnSpan="2" Padding="0" Grid.Row="9" Text="HidratosCarbono:" FontAttributes="Bold" TextColor="#353f5f" FontSize="{OnPlatform Android='20',iOS='30'}" VerticalOptions="Start"  />
+                        <Label x:Name="TextH" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="10" Text="" FontSize="{OnPlatform Android='18',iOS='30'}" FontAttributes="Bold" TextColor="#353f5f"/>
+
+                        <Image x:Name="TexImg" Grid.Column="0" Grid.Row="11" Grid.RowSpan="2" Source=""  VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150"/>
+                    </Grid>
+                </ScrollView>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+    
+</ContentPage>

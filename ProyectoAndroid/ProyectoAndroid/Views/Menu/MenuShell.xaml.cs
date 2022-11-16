@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoAndroid.Views.UsuariosM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,19 @@ namespace ProyectoAndroid.Views.Menu
         public MenuShell()
         {
             InitializeComponent();
+        }
+
+        private async void btnCerrar_Clicked(object sender, EventArgs e)
+        {
+            bool respuesta = await Application.Current.MainPage.DisplayAlert("Mensaje", "Esta Seguro que quieres Cerrar Sesión", "Si", "No");
+
+
+            if (respuesta == true)
+            {
+                Application.Current.Properties.Remove("jsonUsuario");
+                await Application.Current.SavePropertiesAsync();
+                Application.Current.MainPage = new PaginaLogin();
+            }
         }
     }
 }

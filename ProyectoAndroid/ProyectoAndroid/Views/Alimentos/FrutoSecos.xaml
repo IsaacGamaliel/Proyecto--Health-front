@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels.Comidas"
+             x:Class="ProyectoAndroid.Views.Alimentos.FrutoSecos"
+             BackgroundColor="#F4F4F4">
+
+    <ContentPage.BindingContext>
+        <ViewModels:FrutosSecosVM>
+        </ViewModels:FrutosSecosVM>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style  TargetType="Label" x:Key="ImageTitle">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontFamily" Value="Poppins-Bold" />
+                <Setter Property="Margin" Value="10,0,0,5" />
+                <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1">
+                <Label Text="FrutosSecos" 
+                       TextColor="Black"
+                       Margin="16,15,0,10"/>
+                <ListView 
+                    ItemsSource="{Binding Items}"
+                    ItemTapped="EventListView_ItemTapped"
+                    Margin="0"
+                    RowHeight="200"
+                    x:Name="GlassesList"
+                    SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame IsClippedToBounds="True"
+                                       CornerRadius="20"
+                                       Margin="10"
+                                       Padding="0"
+                                       HasShadow="False">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Image  Source="{Binding urlImg}" Aspect="AspectFill" HorizontalOptions="FillAndExpand">
+
+                                        </Image>
+                                        <Frame BackgroundColor="Green"
+                                               Grid.Row="0"
+                                               VerticalOptions="End"
+                                               Margin="0"
+                                               Padding="0,0,10,0"
+                                               HorizontalOptions="Start">
+                                            <Label FontSize="20" Text="{Binding nombreAlimento}" Style="{StaticResource ImageTitle}"/>
+                                        </Frame>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

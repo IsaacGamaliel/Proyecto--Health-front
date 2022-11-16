@@ -8,7 +8,6 @@
             <!-- Main layout structure-->
             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto,Auto,Auto">
                
-                
                 <!-- Main Image-->
                 <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Source="https://www.semana.com/resizer/C4gq3wWjusR-66m81Lvx5vpnajA=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/JD3YU3632ND4TOCDITBA2KOFXQ.jpg" TranslationY="{OnPlatform iOS='65', Android='30'}" VerticalOptions="Start" Aspect="AspectFit" HeightRequest="{OnPlatform Android='190', iOS='420'}"/>
                 <!-- Frame to achieve the gradient over the image-->
@@ -33,6 +32,11 @@
                                 <Span Text="Frutas y&#10;Verduras" FontSize="20"/>
                             </FormattedString>
                         </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_1">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
                     </Label>
                 </Frame>
                 <Frame Grid.Row="3" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
@@ -51,25 +55,67 @@
                     </Label>
                 </Frame>
 
-                <Frame Grid.Row="4"  BackgroundColor="Red" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
+                <Frame Grid.Row="4"  BackgroundColor="Green" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
                     <Label TextColor="White" VerticalTextAlignment="Center">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25"/>
-                                <Span Text="Frutas y&#10;Verduras" FontSize="20"/>
+                                <Span Text="Pescado&#10;" FontSize="20"/>
                             </FormattedString>
                         </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_2">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
                     </Label>
                 </Frame>
 
-                <Frame Grid.Row="4" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Green" CornerRadius="20">
+                <Frame Grid.Row="4" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
                     <Label TextColor="White" VerticalTextAlignment="Center">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25" />
-                                <Span Text="CARNES&#10;" FontSize="20"/>
+                                <Span Text="Frutos Secos&#10;" FontSize="20"/>
                             </FormattedString>
                         </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_3">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="5"  BackgroundColor="Green" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25"/>
+                                <Span Text="Lacteos y &#10;Quesos" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_4">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="5" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25" />
+                                <Span Text="Cereales y &#10;Derivados" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                               Tapped="TapGestureRecognizer_Tapped_5">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
                     </Label>
                 </Frame>
             </Grid>

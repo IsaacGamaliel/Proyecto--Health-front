@@ -21,5 +21,30 @@ namespace ProyectoAndroid.Views.Alimentos
         {
             await Navigation.PushAsync(new Carnes());
         }
+
+        private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FrutaVerdura());
+        }
+
+        private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pescado());
+        }
+
+        private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FrutoSecos());
+        }
+
+        private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LacteoQueso());
+        }
+
+        private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Cereales());
+        }
     }
 }
