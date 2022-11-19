@@ -232,5 +232,89 @@ namespace ProyectoAndroid.Services
             }
             return resultado;
         }
+
+        //Consulta de Ejercicios
+        public async Task<string> ConsultaEjercicios()
+        {
+            string resultado = "";
+            try
+            {
+
+                
+                HttpClient client = new HttpClient();
+
+                var response = new HttpResponseMessage();
+                response = await client.PostAsync(string.Concat(URL, "exercises/ShowExercises"), null);
+                resultado = await response.Content.ReadAsStringAsync();
+
+            }
+            catch (Exception ex)
+            {
+                resultado = "";
+                Debug.WriteLine(ex.Message);
+            }
+            return resultado;
+        }
+
+        //metodo para enviar correo con token
+        public async Task<string> VerificacionCorreo(string email)
+
+        {
+            string resultado = "";
+            MultipartFormDataContent from = new MultipartFormDataContent();
+
+            var contenido = new StringContent(email);
+            from.Add(contenido, "email");
+
+
+            HttpClient client = new HttpClient();
+
+            try
+            {
+
+
+                var response = new HttpResponseMessage();
+                response = await client.PostAsync(string.Concat(URL, "login/ForgotPassword"), from);
+                resultado = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return resultado;
+        }
+
+        //metodo para cambiar Contraseña
+        public async Task<string> cambiarcontra(string password, string token)
+
+        {
+            string resultado = "";
+            MultipartFormDataContent from = new MultipartFormDataContent();
+
+            var contenido = new StringContent(password);
+            from.Add(contenido, "newPassword");
+            contenido = new StringContent(token);
+            from.Add(contenido, "token");
+
+
+            HttpClient client = new HttpClient();
+
+            try
+            {
+
+
+                var response = new HttpResponseMessage();
+                response = await client.PutAsync(string.Concat(URL, "login/new-password"), from);
+                resultado = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return resultado;
+        }
+
     }
 }

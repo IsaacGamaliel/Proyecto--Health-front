@@ -27,8 +27,7 @@ namespace ProyectoAndroid.ViewModels
 
         public string idUsuario { get; set; }
 
-
-
+        public string token { get; set; }
         //Registro
         public ICommand CreateComand
         {
@@ -116,6 +115,83 @@ namespace ProyectoAndroid.ViewModels
                     }
 
                 });
+            }
+        }
+
+        public ICommand VerificarComand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    try
+                    {
+                        var response = await apiRest.VerificacionCorreo(email);
+                        if (response == "\"Email es requerido\"")
+                        {
+
+                            var res = await App.Current.MainPage.DisplayAlert("Error", "Email Requerido", "", "Ok");
+                            //await Application.Current.MainPage.Navigation.PushModalAsync(new NuevaContra());
+                        }
+                        else if(response == "{\"message\":\"Cannot read properties of undefined (reading 'nombre')\"}")
+                        {
+                            var res = await App.Current.MainPage.DisplayAlert("Error", "Email no registrado", "", "Ok");
+                        }
+                        else
+                        {
+                            var res = await App.Current.MainPage.DisplayAlert("Exito", "Email Correcto", "", "Ok");
+                            await Application.Current.MainPage.Navigation.PushModalAsync(new NuevaContra());
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        var res = await App.Current.MainPage.DisplayAlert("Error", "Email Requerido", "", "Ok");
+                        Console.WriteLine(ex);
+                    }
+
+                });
+
+
+            }
+        }
+
+        public ICommand cambiarContra
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    try
+                    {
+                        var response = await apiRest.cambiarcontra(password, token);
+                        if (response == "{\"message\":\"todos los campos son requeridos\",\"code\":1}")
+                        {
+
+                            var res = await App.Current.MainPage.DisplayAlert("Error", "Campos vacios verifica", "", "Ok");
+                            //await Application.Current.MainPage.Navigation.PushModalAsync(new NuevaContra());
+                        }
+                        else if (response == "{\"message\":\"No se puede recuperar la contraseña, verifique el enlace enviado a su correo electrónico\"}")
+                        {
+                            var res = await App.Current.MainPage.DisplayAlert("Error", "Enlace incompleto o erroneo", "", "Ok");
+                        }
+                        else if(response == "{\"message\":\"La contraseña se ha cambiado con éxito\"}")
+                        {
+                            var res = await App.Current.MainPage.DisplayAlert("Exito", "Contraseña actualizada", "", "Ok");
+                            Application.Current.MainPage = new PaginaLogin();
+
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        var res = await App.Current.MainPage.DisplayAlert("Error","Error", "", "Ok");
+                        Console.WriteLine(ex);
+                    }
+
+                });
+
+
             }
         }
 

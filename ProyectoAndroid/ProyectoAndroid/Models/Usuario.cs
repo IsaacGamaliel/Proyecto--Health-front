@@ -15,5 +15,6 @@ namespace ProyectoAndroid.Models
         public string genero { get; set; }
         public string password { get; set; }
         public string idUsuario { get; set; }
+        public string token { get; set; }
     }
 }

@@ -2,6 +2,7 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ProyectoAndroid.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ref\ProyectoAndroid.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\bin\Debug\netstandard2.0\ProyectoAndroid.pdb
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.csproj.AssemblyReference.cache
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.GeneratedMSBuildEditorConfig.editorconfig
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
@@ -19,11 +20,20 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Alimentos\Pescado.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Alimentos\PescadoDet.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Alimentos\SeleccionarAli.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Ejercicios\EjerciciosDet.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Ejercicios\EjerciciosLista.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\InformacionE.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Menu\MenuShell.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Preguntas\CrearPreguntas.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Preguntas\PreguntaDetallada.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Preguntas\Preguntas.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\CarnesP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\CerealesP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\FrutaVerduraP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\FrutoSecosP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\LacteoQuesoP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\PescadoP.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\SeleccionarPro.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\SubMenu\Page1.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\PaginaLogin.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\PaginaRegistro.xaml.g.cs
@@ -35,3 +45,5 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ref\ProyectoAndroid.dll
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.pdb
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\OlvidasteContra.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\NuevaContra.xaml.g.cs

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels"
+             x:Class="ProyectoAndroid.Views.UsuariosM.OlvidasteContra"
+             BackgroundColor="#F4F4F4">
+    <ContentPage.BindingContext>
+        <ViewModels:UsuarioViewModel>
+        </ViewModels:UsuarioViewModel>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Margin="25, 45,25,0">
+            <Label  FontSize="25" FontAttributes="Bold" TextColor="Green" HorizontalTextAlignment="Center" Text="Ingresa tu Correo"/>
+            <Image Grid.Row="0" Source="candado.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Start" Margin="10" HeightRequest="130"/>
+
+            
+            
+            <Label Text="¿Olvidaste tu contraseña?" Margin="0,0,0,15" HorizontalOptions="CenterAndExpand"></Label>
+
+           
+            <Label Text="Ingresa tu correo electronico. En unos minutos recibirás un correo con el código." HorizontalOptions="Center" FontSize="Subtitle" TextColor="Black"/>
+            <Frame  HeightRequest="40" HasShadow="False" CornerRadius="15" BackgroundColor="White" BorderColor="Red">
+                <Entry x:Name="correo"  Text="{Binding email}"  TextColor="Black" />
+            </Frame>
+            <Button Margin="18" BackgroundColor="Green" BorderRadius="20" x:Name =" btnEnvio" Text="Enviar código" Command="{Binding VerificarComand}"  ></Button>
+            <Button x:Name="Cancelar" Text="Cancelar" BackgroundColor="Red" BorderRadius="20" TextColor="White" Margin="8" Clicked="Cancelar_Clicked" />
+
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>

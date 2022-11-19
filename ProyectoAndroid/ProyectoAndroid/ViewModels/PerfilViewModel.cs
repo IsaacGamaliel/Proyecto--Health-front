@@ -25,6 +25,8 @@ namespace ProyectoAndroid.ViewModels
 
         public string idUsuario { get; set; }
 
+        public string token { get; set; }
+
         //public PerfilViewModel()
         //{
         //    UsuarioId();

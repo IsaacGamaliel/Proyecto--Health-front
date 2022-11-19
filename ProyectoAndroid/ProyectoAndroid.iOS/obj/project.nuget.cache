@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dVJ3IvqxVPMJSF5UjHFEbCRY+/7RGCxzMLXw7KLan8OWFNsodNi3/NKeu2JZziesYvGh8PHQhhTdNRUCCGd/9A==",
+  "dgSpecHash": "Rp+8kHr9qcBAsDC6TFq1A2NARXBiPx6mcrRGStcFMfj2/hFLdKP0jCn2ZAZorSZTD3t5o6EDriaqUpc3nnwRIQ==",
   "success": true,
   "projectFilePath": "C:\\Proyecto--Health-front\\ProyectoAndroid\\ProyectoAndroid.iOS\\ProyectoAndroid.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\52428\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\plugin.mediamanager\\1.1.0\\plugin.mediamanager.1.1.0.nupkg.sha512",
+    "C:\\Users\\52428\\.nuget\\packages\\plugin.mediamanager.forms\\1.1.0\\plugin.mediamanager.forms.1.1.0.nupkg.sha512",
     "C:\\Users\\52428\\.nuget\\packages\\plugin.toast\\2.2.0\\plugin.toast.2.2.0.nupkg.sha512",
     "C:\\Users\\52428\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\52428\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",

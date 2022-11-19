@@ -102,26 +102,27 @@
                           Command="{Binding LoginCommand}" 
                      />
                     </StackLayout>
+                   
                     <Label
-                    Margin="20"
-                    AbsoluteLayout.LayoutBounds="1,1,1,.1"
-                    AbsoluteLayout.LayoutFlags="All"
-                    FontSize="14"
-                    TextColor="Black"
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="EndAndExpand">
+                        Margin="20"
+                        AbsoluteLayout.LayoutBounds="1,1,1,.1"
+                        AbsoluteLayout.LayoutFlags="All"
+                        FontSize="14"
+  
+                        TextColor="Black"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="EndAndExpand">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer ></TapGestureRecognizer>
+                            <TapGestureRecognizer 
+                                 Tapped="OlvidasteContraseña"></TapGestureRecognizer>
                         </Label.GestureRecognizers>
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Al registrarte, aceptas nuestros" />
-                                <Span
-                                Text=" Términos y condiciones"
-                                TextColor="Green"
-                                TextDecorations="Underline" 
-                                FontSize="14"/>
+                                <Span Text="¿Olvidaste tu contraseña?"
+                                       TextDecorations="Underline"
+                                       TextColor="Green"/>
                             </FormattedString>
+                            
                         </Label.FormattedText>
                     </Label>
 

@@ -11,6 +11,38 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.MediaManager/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer": "2.11.8",
+          "Xam.Plugins.Android.ExoPlayer.MediaSession": "2.11.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/MediaManager.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/MediaManager.dll": {}
+        }
+      },
+      "Plugin.MediaManager.Forms/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Plugin.MediaManager": "1.1.0",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/MediaManager.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/MediaManager.Forms.dll": {}
+        }
+      },
       "Plugin.Toast/2.2.0": {
         "type": "package",
         "compile": {
@@ -29,6 +61,117 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8",
+          "Xam.Plugins.Android.ExoPlayer.Dash": "2.11.8",
+          "Xam.Plugins.Android.ExoPlayer.Hls": "2.11.8",
+          "Xam.Plugins.Android.ExoPlayer.SmoothStreaming": "2.11.8",
+          "Xam.Plugins.Android.ExoPlayer.UI": "2.11.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Core/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.1.0.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.Core.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.Core.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Dash/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.Dash.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.Dash.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.Hls/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.Hls.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.Hls.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.MediaSession/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8",
+          "Xamarin.AndroidX.Media": "1.1.0.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.Ext.MediaSession.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.Ext.MediaSession.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.SmoothStreaming.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.SmoothStreaming.dll": {}
+        }
+      },
+      "Xam.Plugins.Android.ExoPlayer.UI/2.11.8": {
+        "type": "package",
+        "dependencies": {
+          "Xam.Plugins.Android.ExoPlayer.Core": "2.11.8",
+          "Xamarin.AndroidX.Media": "1.1.0.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid10.0/ExoPlayer.UI.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid10.0/ExoPlayer.UI.dll": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.1.0.5": {
@@ -1034,6 +1177,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "Plugin.MediaManager.Forms": "1.1.0",
           "Plugin.Toast": "2.2.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.FFImageLoading": "2.4.8.956",
@@ -1076,6 +1220,91 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.MediaManager/1.1.0": {
+      "sha512": "LORwWEKgRXnrN/gdnBhhZjko2/q/6zZmhiMKzw1L7Rue9luvHWaC55X8NoEMa4q6sS9yrkiVLXkMHR8C+XF/jg==",
+      "type": "package",
+      "path": "plugin.mediamanager/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/MediaManager.dll",
+        "lib/monoandroid10.0/MediaManager.pdb",
+        "lib/monoandroid10.0/MediaManager.xml",
+        "lib/net472/MediaManager.dll",
+        "lib/net472/MediaManager.pdb",
+        "lib/net472/MediaManager.xml",
+        "lib/netcoreapp3.1/MediaManager.dll",
+        "lib/netcoreapp3.1/MediaManager.pdb",
+        "lib/netcoreapp3.1/MediaManager.xml",
+        "lib/netstandard2.0/MediaManager.dll",
+        "lib/netstandard2.0/MediaManager.pdb",
+        "lib/netstandard2.0/MediaManager.xml",
+        "lib/tizen40/MediaManager.dll",
+        "lib/tizen40/MediaManager.pdb",
+        "lib/tizen40/MediaManager.xml",
+        "lib/uap10.0.18362/MediaManager.dll",
+        "lib/uap10.0.18362/MediaManager.pdb",
+        "lib/uap10.0.18362/MediaManager.pri",
+        "lib/uap10.0.18362/MediaManager.xml",
+        "lib/uap10.0.18362/MediaManager/MediaManager.xr.xml",
+        "lib/xamarinios10/MediaManager.dll",
+        "lib/xamarinios10/MediaManager.pdb",
+        "lib/xamarinios10/MediaManager.xml",
+        "lib/xamarinmac20/MediaManager.dll",
+        "lib/xamarinmac20/MediaManager.pdb",
+        "lib/xamarinmac20/MediaManager.xml",
+        "lib/xamarintvos10/MediaManager.dll",
+        "lib/xamarintvos10/MediaManager.pdb",
+        "lib/xamarintvos10/MediaManager.xml",
+        "plugin.mediamanager.1.1.0.nupkg.sha512",
+        "plugin.mediamanager.nuspec",
+        "readme.txt"
+      ]
+    },
+    "Plugin.MediaManager.Forms/1.1.0": {
+      "sha512": "gNnPucUrm/Nus4s9IFeUKKxjQ3EfCzNeFBN18LXHjsoB01JXApCaSEULoIWks8hvKeguBSgjEhIXbqcEdEg+NQ==",
+      "type": "package",
+      "path": "plugin.mediamanager.forms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/MediaManager.Forms.dll",
+        "lib/monoandroid10.0/MediaManager.Forms.pdb",
+        "lib/monoandroid10.0/MediaManager.Forms.xml",
+        "lib/net472/MediaManager.Forms.dll",
+        "lib/net472/MediaManager.Forms.pdb",
+        "lib/net472/MediaManager.Forms.xml",
+        "lib/netcoreapp3.1/MediaManager.Forms.dll",
+        "lib/netcoreapp3.1/MediaManager.Forms.pdb",
+        "lib/netcoreapp3.1/MediaManager.Forms.xml",
+        "lib/netstandard2.0/MediaManager.Forms.dll",
+        "lib/netstandard2.0/MediaManager.Forms.pdb",
+        "lib/netstandard2.0/MediaManager.Forms.xml",
+        "lib/tizen40/MediaManager.Forms.dll",
+        "lib/tizen40/MediaManager.Forms.pdb",
+        "lib/tizen40/MediaManager.Forms.xml",
+        "lib/uap10.0.18362/MediaManager.Forms.dll",
+        "lib/uap10.0.18362/MediaManager.Forms.pdb",
+        "lib/uap10.0.18362/MediaManager.Forms.pri",
+        "lib/uap10.0.18362/MediaManager.Forms.xml",
+        "lib/xamarinios10/MediaManager.Forms.dll",
+        "lib/xamarinios10/MediaManager.Forms.pdb",
+        "lib/xamarinios10/MediaManager.Forms.xml",
+        "lib/xamarinmac20/MediaManager.Forms.dll",
+        "lib/xamarinmac20/MediaManager.Forms.pdb",
+        "lib/xamarinmac20/MediaManager.Forms.xml",
+        "lib/xamarintvos10/MediaManager.Forms.dll",
+        "lib/xamarintvos10/MediaManager.Forms.pdb",
+        "lib/xamarintvos10/MediaManager.Forms.xml",
+        "plugin.mediamanager.forms.1.1.0.nupkg.sha512",
+        "plugin.mediamanager.forms.nuspec",
+        "readme.txt"
       ]
     },
     "Plugin.Toast/2.2.0": {
@@ -1157,6 +1386,111 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer/2.11.8": {
+      "sha512": "QhXsquw4z8KlKI5q4j/fiQeJrYXlxvr7ZxSaZV6WYCoB2fmoatNV8ezVJu3dCtt3cXRNuzZQfBjIX4p3hTQnuw==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.dll",
+        "lib/monoandroid10.0/ExoPlayer.pdb",
+        "lib/monoandroid10.0/ExoPlayer.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.Core/2.11.8": {
+      "sha512": "lltGD91Y9CKa1jhULE3+aTGkUt9ouE/3bDhxbs9FEek3/SWbTmq5LAy+EHuZ+vwQqLLTRbf89gKGWPgp0bzrpA==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.core/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.Core.dll",
+        "lib/monoandroid10.0/ExoPlayer.Core.pdb",
+        "lib/monoandroid10.0/ExoPlayer.Core.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.core.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.core.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.Dash/2.11.8": {
+      "sha512": "87vsjH0mxgdU/t04mjAJSgd85fHHULXCkk9+QHBEBqSeb+Ay2kdGp7KiuIVTXvIXfWCJ1i8G8tiJmWKezuspfA==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.dash/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.Dash.dll",
+        "lib/monoandroid10.0/ExoPlayer.Dash.pdb",
+        "lib/monoandroid10.0/ExoPlayer.Dash.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.dash.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.dash.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.Hls/2.11.8": {
+      "sha512": "RzV/k99ExClslHGldSc22GqKXoquNvWdfiGTAKHBlQy4mVUcxiDv4J9Uc8ewRl+d4PxwnFLftNEW4Xt3SqFQsg==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.hls/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.Hls.dll",
+        "lib/monoandroid10.0/ExoPlayer.Hls.pdb",
+        "lib/monoandroid10.0/ExoPlayer.Hls.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.hls.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.hls.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.MediaSession/2.11.8": {
+      "sha512": "RAvmeWVjvjNDeM7EzqhpjbBdQY+TCZjPhKzpUqimW8bhrZTzHJ7dyynaN8eBKvjqD0yJY85WmNIhHRhScy09Tg==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.mediasession/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.Ext.MediaSession.dll",
+        "lib/monoandroid10.0/ExoPlayer.Ext.MediaSession.pdb",
+        "lib/monoandroid10.0/ExoPlayer.Ext.MediaSession.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.mediasession.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.mediasession.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.SmoothStreaming/2.11.8": {
+      "sha512": "ZecEs6ZbUI843D65rth+nplaZlglI5SpeksaTzpW+hi3A+y5gvYROuk3cLhyqmbiCgi50/PrTZh0wTvuEqVmTQ==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.smoothstreaming/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.SmoothStreaming.dll",
+        "lib/monoandroid10.0/ExoPlayer.SmoothStreaming.pdb",
+        "lib/monoandroid10.0/ExoPlayer.SmoothStreaming.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.smoothstreaming.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.smoothstreaming.nuspec"
+      ]
+    },
+    "Xam.Plugins.Android.ExoPlayer.UI/2.11.8": {
+      "sha512": "PQN2raY7zw/sipc+SZhIa8T2lRpQDQzYYmHcJh7i0Fev2aHFMfV/YAuj/ScgwtNHr6gZsmizJ2S9sR2MminoLA==",
+      "type": "package",
+      "path": "xam.plugins.android.exoplayer.ui/2.11.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid10.0/ExoPlayer.UI.dll",
+        "lib/monoandroid10.0/ExoPlayer.UI.pdb",
+        "lib/monoandroid10.0/ExoPlayer.UI.xml",
+        "readme.txt",
+        "xam.plugins.android.exoplayer.ui.2.11.8.nupkg.sha512",
+        "xam.plugins.android.exoplayer.ui.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.1.0.5": {
@@ -2406,6 +2740,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
+      "Plugin.MediaManager.Forms >= 1.1.0",
       "Plugin.Toast >= 2.2.0",
       "ProyectoAndroid >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
@@ -2439,8 +2774,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid11.0": {
@@ -2455,6 +2789,10 @@
     "frameworks": {
       "monoandroid11.0": {
         "dependencies": {
+          "Plugin.MediaManager.Forms": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
           "Plugin.Toast": {
             "target": "Package",
             "version": "[2.2.0, )"

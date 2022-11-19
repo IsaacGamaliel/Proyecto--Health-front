@@ -35,8 +35,12 @@ namespace ProyectoAndroid.Views.UsuariosM
         private void Registro(object sender, EventArgs e)
         {
             Application.Current.MainPage = new PaginaRegistro();
+        }
 
+        public async void OlvidasteContraseña(object sender, EventArgs e)
+        {
 
+            Application.Current.MainPage = new OlvidasteContra();
         }
 
         //private async void LoginButton_Clicked(object sender, EventArgs e)

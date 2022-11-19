@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAndroid.Views.Productos.SeleccionarPro"
+             BackgroundColor="#F4F4F4">
+    <ContentPage.Content>
+        <ScrollView>
+            <!-- Main layout structure-->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto,Auto,Auto">
+
+                <!-- Main Image-->
+                <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Source="https://okdiario.com/img/2021/11/25/franki-chamaki-ivfp_yxzuyq-unsplash11-655x368.jpg" TranslationY="{OnPlatform iOS='65', Android='30'}" VerticalOptions="Start" Aspect="AspectFit" HeightRequest="{OnPlatform Android='190', iOS='420'}"/>
+                <!-- Frame to achieve the gradient over the image-->
+                <Frame Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" TranslationY="{OnPlatform iOS='60', Android='65'}" HasShadow="False">
+                    <Frame.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="Transparent" Offset="0.6" />
+                            <GradientStop Color="#e4e4e4" Offset="0.9" />
+                        </LinearGradientBrush>
+                    </Frame.Background>
+                </Frame>
+                <!-- 2. Description -->
+                <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Text="Precio&#10;De Alimentos " Margin="25,-10,0,0" CharacterSpacing="3" FontAttributes="Bold" TextColor="#353f5f" FontSize="40"/>
+                <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Text="Descubre los precios en nuestros en diferentes sucursales."  FontSize="20" TextColor="#9196a6" Margin="25,20,0,35"/>
+
+                <!-- 3. Cards -->
+                <Frame Grid.Row="3"  BackgroundColor="Green" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25"/>
+                                <Span Text="Frutas y&#10;Verduras" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_1">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25" />
+                                <Span Text="CARNES&#10;" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="4"  BackgroundColor="Green" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25"/>
+                                <Span Text="Pescado&#10;" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_2">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="4" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25" />
+                                <Span Text="Frutos Secos&#10;" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_3">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="5"  BackgroundColor="Green" Grid.Column="0" Margin="{OnPlatform Android='25,0,5,30', iOS='25,0,5,70'}" HasShadow="False" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25"/>
+                                <Span Text="Lacteos y &#10;Quesos" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_4">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Row="5" Grid.Column="1" Margin="{OnPlatform Android='5,0,25,30', iOS='5,0,25,70'}" HasShadow="False" BackgroundColor="Red" CornerRadius="20">
+                    <Label TextColor="White" VerticalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Categoria:&#10;" FontAttributes="Bold" FontSize="25" />
+                                <Span Text="Cereales y &#10;Derivados" FontSize="20"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                               Tapped="TapGestureRecognizer_Tapped_5">
+                            </TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

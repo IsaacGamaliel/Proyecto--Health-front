@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAndroid.Views.Ejercicios.EjerciciosDet"
+             BackgroundColor="#F4F4F4">
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" BackgroundColor="#F4F4F4">
+            <!-- 1. Main structure-->
+
+            <!-- 1.1 Main Picture -->
+            <Frame Grid.Row="0" VerticalOptions="Start" IsClippedToBounds="True" CornerRadius="35" HorizontalOptions="FillAndExpand" BackgroundColor="LightGreen">
+
+                <WebView
+                    Source=""  
+                    HeightRequest="270" x:Name="wb_video" IsTabStop="False">
+                </WebView>
+            </Frame>
+            <!-- 1.1 Heart -->
+            <Image Grid.Row="0" Source="_Heart" Margin="0,35,20,0" HeightRequest="35" WidthRequest="35" HorizontalOptions="End" VerticalOptions="Start"/>
+
+            <!-- 2. Event Description -->
+
+            <!-- 2.1 Fashion Fair frame 2020-->
+            <Frame Grid.Row="1"  HasShadow="False" Margin="30,-0,20,20" CornerRadius="20" HeightRequest="270" BackgroundColor="LightGreen">
+                <Grid>
+                    
+                    <!-- Event name-->
+                   
+                    <!--Location information-->
+                    
+                    <Image x:Name="TexImg" Grid.Column="0"  Source=""    WidthRequest="400"/>
+                </Grid>
+            </Frame>
+
+            
+            <!-- Details-->
+            <Label Margin="30,0" x:Name="TxtNombre" Grid.Row="2" FontSize="22" Text="" TextColor="Black" FontAttributes="Bold"/>
+            <Frame Margin="30,0" BackgroundColor="LightGreen" Grid.Row="3">
+                <!-- Description-->
+                <Label Margin="20,0" x:Name="TxtDescrip"  TextColor="Black" Text=""/>
+            </Frame>
+            <!-- Read more-->
+            
+        </Grid>
+        
+        
+    </ScrollView>
+</ContentPage>

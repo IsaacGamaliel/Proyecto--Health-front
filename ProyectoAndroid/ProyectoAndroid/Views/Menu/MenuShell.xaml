@@ -7,7 +7,9 @@
         xmlns:Preg="clr-namespace:ProyectoAndroid.Views.Preguntas"
         xmlns:UsuarioC="clr-namespace:ProyectoAndroid.Views.UsuariosM"
         xmlns:Info="clr-namespace:ProyectoAndroid.Views"
-        xmlns:SelectA="clr-namespace:ProyectoAndroid.Views.Alimentos">
+        xmlns:SelectA="clr-namespace:ProyectoAndroid.Views.Alimentos"
+        xmlns:Ejercicio="clr-namespace:ProyectoAndroid.Views.Ejercicios"
+        xmlns:Producto="clr-namespace:ProyectoAndroid.Views.Productos">
     <Shell.Resources>
 
         <ResourceDictionary>
@@ -106,13 +108,13 @@
 
     <FlyoutItem Title="Cesta" Icon="cesta" >
         <Tab>
-            <ShellContent Style="{StaticResource MonkeysShell}" />
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Producto:SeleccionarPro }"/>
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="Ejercicios" Icon="Ejercicios" >
         <Tab>
-            <ShellContent Style="{StaticResource MonkeysShell}" />
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Ejercicio:EjerciciosLista}" />
         </Tab>
     </FlyoutItem>
 

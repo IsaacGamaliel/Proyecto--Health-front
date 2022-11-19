@@ -14,5 +14,11 @@ namespace ProyectoAndroid.Models
         public string hidratosCarbono { get; set; }
         public string categoriaAlimento { get; set; }
         public string urlImg { get; set; }
+        public string precioAurrera { get; set; }
+        public string precioCosto { get; set; }
+        public string precioWalmart { get; set; }
+        public string precioChedraui { get; set; }
+        public string precioSoriana { get; set; }
+
     }
 }

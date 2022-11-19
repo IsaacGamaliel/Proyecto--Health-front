@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ViewModels="clr-namespace:ProyectoAndroid.ViewModels.Productos"
+             x:Class="ProyectoAndroid.Views.Productos.PescadoP"
+             BackgroundColor="#F4F4F4">
+
+    <ContentPage.BindingContext>
+        <ViewModels:PPescadoVM>
+        </ViewModels:PPescadoVM>
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label Text="Pescados" 
+                       TextColor="Black"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"/>
+            <ListView x:Name="EventListView"
+                      Margin="0,8,0,0"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      ItemsSource="{Binding Items}">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ViewCell  >
+                            <Frame CornerRadius="40" Padding="10" BackgroundColor="Green" BorderColor="#e4e2e1" VerticalOptions="FillAndExpand" Margin="0,8,0,0">
+                                <Grid  VerticalOptions="FillAndExpand" >
+                                    <StackLayout HorizontalOptions="FillAndExpand" >
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Medium"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding nombreAlimento}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,25,0,0">
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Precio Aurrera:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,38,0,0">
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding precioAurrera}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,56,0,0">
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Precio Costco:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,69,0,0">
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding precioCosto}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,86,0,0">
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Precio Walmart:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,99,0,0">
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding precioCosto}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,115,0,0">
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Precio Chedraui:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,129,0,0">
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding precioChedraui}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,145,0,0">
+                                        <Label 
+                                           FontAttributes="Italic"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="Precio Soriana:"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,158,0,0">
+                                        <Label 
+                                           FontAttributes="Bold"
+                                           FontSize="Small"
+                                           MaxLines="1"
+                                           HorizontalOptions="CenterAndExpand"
+                                           Text="{Binding precioSoriana}"
+                                           TextColor="Black"
+                                            />
+                                    </StackLayout>
+                                    <StackLayout HorizontalOptions="FillAndExpand"  Padding="0,180,0,0">
+                                        <Image
+                                            WidthRequest = "80" HeightRequest = "100"
+                                            Source="{Binding urlImg}"
+                                            HorizontalOptions="FillAndExpand" 
+                                        />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+   
+</ContentPage>
