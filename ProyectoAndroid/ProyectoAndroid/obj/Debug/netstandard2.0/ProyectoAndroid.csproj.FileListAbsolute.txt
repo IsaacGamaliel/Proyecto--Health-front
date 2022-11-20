@@ -34,7 +34,6 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\LacteoQuesoP.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\PescadoP.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Productos\SeleccionarPro.xaml.g.cs
-C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\SubMenu\Page1.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\PaginaLogin.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\PaginaRegistro.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\UsuarioCambiar.xaml.g.cs
@@ -47,3 +46,4 @@ C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\ProyectoAndroid.pdb
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\OlvidasteContra.xaml.g.cs
 C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\UsuariosM\NuevaContra.xaml.g.cs
+C:\Proyecto--Health-front\ProyectoAndroid\ProyectoAndroid\obj\Debug\netstandard2.0\Views\Dietas\Dietas.xaml.g.cs

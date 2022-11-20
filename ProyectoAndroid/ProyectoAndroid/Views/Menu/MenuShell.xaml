@@ -2,14 +2,14 @@
 <Shell  xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoAndroid.Views.Menu.MenuShell"
-          xmlns:templates="clr-namespace:ProyectoAndroid.Templates"
-        xmlns:Page1="clr-namespace:ProyectoAndroid.Views.SubMenu" 
+          xmlns:templates="clr-namespace:ProyectoAndroid.Templates" 
         xmlns:Preg="clr-namespace:ProyectoAndroid.Views.Preguntas"
         xmlns:UsuarioC="clr-namespace:ProyectoAndroid.Views.UsuariosM"
         xmlns:Info="clr-namespace:ProyectoAndroid.Views"
         xmlns:SelectA="clr-namespace:ProyectoAndroid.Views.Alimentos"
         xmlns:Ejercicio="clr-namespace:ProyectoAndroid.Views.Ejercicios"
-        xmlns:Producto="clr-namespace:ProyectoAndroid.Views.Productos">
+        xmlns:Producto="clr-namespace:ProyectoAndroid.Views.Productos"
+        xmlns:Dieta ="clr-namespace:ProyectoAndroid.Views.Dietas">
     <Shell.Resources>
 
         <ResourceDictionary>
@@ -102,7 +102,7 @@
 
     <FlyoutItem Title="Dietas" Icon="dieta" >
         <Tab>
-            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Page1:Page1}"/>
+            <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate Dieta:Dietas}"/>
         </Tab>
     </FlyoutItem>
 

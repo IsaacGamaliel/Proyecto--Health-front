@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoAndroid.Views.SubMenu.Page1.xaml", "Views/SubMenu/Page1.xaml", typeof(global::ProyectoAndroid.Views.SubMenu.Page1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ProyectoAndroid.Views.Dietas.Dietas.xaml", "Views/Dietas/Dietas.xaml", typeof(global::ProyectoAndroid.Views.Dietas.Dietas))]
 
-namespace ProyectoAndroid.Views.SubMenu {
+namespace ProyectoAndroid.Views.Dietas {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\SubMenu\\Page1.xaml")]
-    public partial class Page1 : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Dietas\\Dietas.xaml")]
+    public partial class Dietas : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Dietas));
         }
     }
 }
