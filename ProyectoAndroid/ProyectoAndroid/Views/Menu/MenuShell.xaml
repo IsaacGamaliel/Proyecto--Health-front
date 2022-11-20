@@ -118,12 +118,6 @@
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Retos" Icon="retos" >
-        <Tab>
-            <ShellContent Style="{StaticResource MonkeysShell}" />
-        </Tab>
-    </FlyoutItem>
-
     <FlyoutItem Title="Tabla" Icon="tabla" >
         <Tab>
             <ShellContent Style="{StaticResource MonkeysShell}" ContentTemplate="{DataTemplate SelectA:SeleccionarAli}" />
